@@ -60,7 +60,7 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 		Skip("External configuration is not available, skipping tests...")
 	}
 
-	Describe(`External configuration`, func() {
+	FDescribe(`External configuration`, func() {
 		It("Successfully load the configuration", func() {
 			_, err = os.Stat(externalConfigFile)
 			if err != nil {
@@ -113,7 +113,7 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 		})
 	})
 
-	Describe(`Client initialization`, func() {
+	FDescribe(`Client initialization`, func() {
 		BeforeEach(func() {
 			shouldSkipTest()
 		})
@@ -323,7 +323,7 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 		})
 	})
 
-	Describe(`ValidateResults - Validate exchange protocol results`, func() {
+	FDescribe(`ValidateResults - Validate exchange protocol results`, func() {
 		BeforeEach(func() {
 			shouldSkipTest()
 		})
@@ -343,7 +343,7 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 				IPAddress:                []string{"192.168.0.125", "192.168.122.1", "fe80::3c47:1aff:fe33:601"},
 				ComplyComplianceFindings: []posturemanagementv1.TaniumComplianceFindings{*taniumComplianceFindingsModel},
 				Count:                    core.StringPtr("1"),
-				TransactionID:            core.StringPtr("testString"),
+				TransactionID:            core.StringPtr(uuid.NewString()),
 			}
 
 			exchangeProtocolValidationResponse, response, err := postureManagementService.ValidateResults(validateResultsOptions)
