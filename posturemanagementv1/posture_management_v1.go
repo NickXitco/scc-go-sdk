@@ -830,6 +830,94 @@ func (postureManagement *PostureManagementV1) CreateCredentialWithContext(ctx co
 	return
 }
 
+// ValidateResults : Validate exchange protocol results
+// Validate exchange protocol results.
+func (postureManagement *PostureManagementV1) ValidateResults(validateResultsOptions *ValidateResultsOptions) (result *ExchangeProtocolValidationResponse, response *core.DetailedResponse, err error) {
+	return postureManagement.ValidateResultsWithContext(context.Background(), validateResultsOptions)
+}
+
+// ValidateResultsWithContext is an alternate form of the ValidateResults method which supports a Context parameter
+func (postureManagement *PostureManagementV1) ValidateResultsWithContext(ctx context.Context, validateResultsOptions *ValidateResultsOptions) (result *ExchangeProtocolValidationResponse, response *core.DetailedResponse, err error) {
+	err = core.ValidateNotNil(validateResultsOptions, "validateResultsOptions cannot be nil")
+	if err != nil {
+		return
+	}
+	err = core.ValidateStruct(validateResultsOptions, "validateResultsOptions")
+	if err != nil {
+		return
+	}
+
+	pathParamsMap := map[string]string{
+		"scope_uuid": *validateResultsOptions.ScopeUUID,
+	}
+
+	builder := core.NewRequestBuilder(core.POST)
+	builder = builder.WithContext(ctx)
+	builder.EnableGzipCompression = postureManagement.GetEnableGzipCompression()
+	_, err = builder.ResolveRequestURL(postureManagement.Service.Options.URL, `/exchangeprotocol/v1/scope/{scope_uuid}/results`, pathParamsMap)
+	if err != nil {
+		return
+	}
+
+	for headerName, headerValue := range validateResultsOptions.Headers {
+		builder.AddHeader(headerName, headerValue)
+	}
+
+	sdkHeaders := common.GetSdkHeaders("posture_management", "V1", "ValidateResults")
+	for headerName, headerValue := range sdkHeaders {
+		builder.AddHeader(headerName, headerValue)
+	}
+	builder.AddHeader("Accept", "text/plain")
+	builder.AddHeader("Content-Type", "application/json")
+	if validateResultsOptions.TransactionID != nil {
+		builder.AddHeader("Transaction-Id", fmt.Sprint(*validateResultsOptions.TransactionID))
+	}
+
+	builder.AddQuery("account_id", fmt.Sprint(*postureManagement.AccountID))
+	builder.AddQuery("result_type", fmt.Sprint(*validateResultsOptions.ResultType))
+
+	body := make(map[string]interface{})
+	if validateResultsOptions.ComputerName != nil {
+		body["Computer Name"] = validateResultsOptions.ComputerName
+	}
+	if validateResultsOptions.TaniumClientIPAddress != nil {
+		body["Tanium Client IP Address"] = validateResultsOptions.TaniumClientIPAddress
+	}
+	if validateResultsOptions.IPAddress != nil {
+		body["IP Address"] = validateResultsOptions.IPAddress
+	}
+	if validateResultsOptions.ComplyComplianceFindings != nil {
+		body["Comply - Compliance Findings"] = validateResultsOptions.ComplyComplianceFindings
+	}
+	if validateResultsOptions.Count != nil {
+		body["Count"] = validateResultsOptions.Count
+	}
+	_, err = builder.SetBodyContentJSON(body)
+	if err != nil {
+		return
+	}
+
+	request, err := builder.Build()
+	if err != nil {
+		return
+	}
+
+	var rawResponse map[string]json.RawMessage
+	response, err = postureManagement.Service.Request(request, &rawResponse)
+	if err != nil {
+		return
+	}
+	if rawResponse != nil {
+		err = core.UnmarshalModel(rawResponse, "", &result, UnmarshalExchangeProtocolValidationResponse)
+		if err != nil {
+			return
+		}
+		response.Result = result
+	}
+
+	return
+}
+
 // ApplicabilityCriteria : The criteria that defines how a profile applies.
 type ApplicabilityCriteria struct {
 	// A list of environments that a profile can be applied to.
@@ -1303,6 +1391,30 @@ func UnmarshalCredential(m map[string]json.RawMessage, result interface{}) (err 
 		return
 	}
 	err = core.UnmarshalPrimitive(m, "created_time", &obj.CreatedTime)
+	if err != nil {
+		return
+	}
+	reflect.ValueOf(result).Elem().Set(reflect.ValueOf(obj))
+	return
+}
+
+// ExchangeProtocolValidationResponse : loren ipsum.
+type ExchangeProtocolValidationResponse struct {
+	// loren ipsum.
+	Success *string `json:"success,omitempty"`
+
+	// loren ipsum.
+	Message *string `json:"message,omitempty"`
+}
+
+// UnmarshalExchangeProtocolValidationResponse unmarshals an instance of ExchangeProtocolValidationResponse from the specified map of raw messages.
+func UnmarshalExchangeProtocolValidationResponse(m map[string]json.RawMessage, result interface{}) (err error) {
+	obj := new(ExchangeProtocolValidationResponse)
+	err = core.UnmarshalPrimitive(m, "success", &obj.Success)
+	if err != nil {
+		return
+	}
+	err = core.UnmarshalPrimitive(m, "message", &obj.Message)
 	if err != nil {
 		return
 	}
@@ -3281,4 +3393,128 @@ func UnmarshalSummaryItem(m map[string]json.RawMessage, result interface{}) (err
 	}
 	reflect.ValueOf(result).Elem().Set(reflect.ValueOf(obj))
 	return
+}
+
+// TaniumComplianceFindings : loren ipsum.
+type TaniumComplianceFindings struct {
+	// loren ipsum.
+	CheckID *string `json:"Check ID,omitempty"`
+
+	// loren ipsum.
+	State *string `json:"State,omitempty"`
+
+	// loren ipsum.
+	RuleID *string `json:"Rule ID,omitempty"`
+}
+
+// UnmarshalTaniumComplianceFindings unmarshals an instance of TaniumComplianceFindings from the specified map of raw messages.
+func UnmarshalTaniumComplianceFindings(m map[string]json.RawMessage, result interface{}) (err error) {
+	obj := new(TaniumComplianceFindings)
+	err = core.UnmarshalPrimitive(m, "Check ID", &obj.CheckID)
+	if err != nil {
+		return
+	}
+	err = core.UnmarshalPrimitive(m, "State", &obj.State)
+	if err != nil {
+		return
+	}
+	err = core.UnmarshalPrimitive(m, "Rule ID", &obj.RuleID)
+	if err != nil {
+		return
+	}
+	reflect.ValueOf(result).Elem().Set(reflect.ValueOf(obj))
+	return
+}
+
+// ValidateResultsOptions : The ValidateResults options.
+type ValidateResultsOptions struct {
+	// The uuid of the scope used for Tanium integration.
+	ScopeUUID *string `validate:"required,ne="`
+
+	// The type of result used for Tanium integration.
+	ResultType *string `validate:"required"`
+
+	// loren ipsum.
+	ComputerName *string
+
+	// loren ipsum.
+	TaniumClientIPAddress *string
+
+	// loren ipsum.
+	IPAddress []string
+
+	// loren ipsum.
+	ComplyComplianceFindings []TaniumComplianceFindings
+
+	// loren ipsum.
+	Count *string
+
+	// The unique identifier that is used to trace an entire request. If you omit this field, the service generates and
+	// sends a transaction ID as a response header of the request.
+	TransactionID *string
+
+	// Allows users to set headers on API requests
+	Headers map[string]string
+}
+
+// NewValidateResultsOptions : Instantiate ValidateResultsOptions
+func (*PostureManagementV1) NewValidateResultsOptions(scopeUUID string, resultType string) *ValidateResultsOptions {
+	return &ValidateResultsOptions{
+		ScopeUUID:  core.StringPtr(scopeUUID),
+		ResultType: core.StringPtr(resultType),
+	}
+}
+
+// SetScopeUUID : Allow user to set ScopeUUID
+func (_options *ValidateResultsOptions) SetScopeUUID(scopeUUID string) *ValidateResultsOptions {
+	_options.ScopeUUID = core.StringPtr(scopeUUID)
+	return _options
+}
+
+// SetResultType : Allow user to set ResultType
+func (_options *ValidateResultsOptions) SetResultType(resultType string) *ValidateResultsOptions {
+	_options.ResultType = core.StringPtr(resultType)
+	return _options
+}
+
+// SetComputerName : Allow user to set ComputerName
+func (_options *ValidateResultsOptions) SetComputerName(computerName string) *ValidateResultsOptions {
+	_options.ComputerName = core.StringPtr(computerName)
+	return _options
+}
+
+// SetTaniumClientIPAddress : Allow user to set TaniumClientIPAddress
+func (_options *ValidateResultsOptions) SetTaniumClientIPAddress(taniumClientIPAddress string) *ValidateResultsOptions {
+	_options.TaniumClientIPAddress = core.StringPtr(taniumClientIPAddress)
+	return _options
+}
+
+// SetIPAddress : Allow user to set IPAddress
+func (_options *ValidateResultsOptions) SetIPAddress(ipAddress []string) *ValidateResultsOptions {
+	_options.IPAddress = ipAddress
+	return _options
+}
+
+// SetComplyComplianceFindings : Allow user to set ComplyComplianceFindings
+func (_options *ValidateResultsOptions) SetComplyComplianceFindings(complyComplianceFindings []TaniumComplianceFindings) *ValidateResultsOptions {
+	_options.ComplyComplianceFindings = complyComplianceFindings
+	return _options
+}
+
+// SetCount : Allow user to set Count
+func (_options *ValidateResultsOptions) SetCount(count string) *ValidateResultsOptions {
+	_options.Count = core.StringPtr(count)
+	return _options
+}
+
+// SetTransactionID : Allow user to set TransactionID
+func (_options *ValidateResultsOptions) SetTransactionID(transactionID string) *ValidateResultsOptions {
+	_options.TransactionID = core.StringPtr(transactionID)
+	return _options
+}
+
+// SetHeaders : Allow user to set Headers
+func (options *ValidateResultsOptions) SetHeaders(param map[string]string) *ValidateResultsOptions {
+	options.Headers = param
+	return options
 }

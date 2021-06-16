@@ -322,6 +322,38 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 
 		})
 	})
+
+	Describe(`ValidateResults - Validate exchange protocol results`, func() {
+		BeforeEach(func() {
+			shouldSkipTest()
+		})
+		It(`ValidateResults(validateResultsOptions *ValidateResultsOptions)`, func() {
+
+			taniumComplianceFindingsModel := &posturemanagementv1.TaniumComplianceFindings{
+				CheckID: core.StringPtr("CIS Red Hat Enterprise Linux 8 Benchmark;1.0.0-1;Level 1 - Server;1;xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled"),
+				State:   core.StringPtr("fail"),
+				RuleID:  core.StringPtr("xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled"),
+			}
+
+			validateResultsOptions := &posturemanagementv1.ValidateResultsOptions{
+				ScopeUUID:                core.StringPtr("testString"),
+				ResultType:               core.StringPtr("VALIDATION"),
+				ComputerName:             core.StringPtr("RHEL8"),
+				TaniumClientIPAddress:    core.StringPtr("192.168.0.125"),
+				IPAddress:                []string{"192.168.0.125", "192.168.122.1", "fe80::3c47:1aff:fe33:601"},
+				ComplyComplianceFindings: []posturemanagementv1.TaniumComplianceFindings{*taniumComplianceFindingsModel},
+				Count:                    core.StringPtr("1"),
+				TransactionID:            core.StringPtr("testString"),
+			}
+
+			exchangeProtocolValidationResponse, response, err := postureManagementService.ValidateResults(validateResultsOptions)
+
+			Expect(err).To(BeNil())
+			Expect(response.StatusCode).To(Equal(201))
+			Expect(exchangeProtocolValidationResponse).ToNot(BeNil())
+
+		})
+	})
 })
 
 //

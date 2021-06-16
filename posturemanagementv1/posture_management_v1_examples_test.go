@@ -300,5 +300,28 @@ var _ = Describe(`PostureManagementV1 Examples Tests`, func() {
 			Expect(credential).ToNot(BeNil())
 
 		})
+		It(`ValidateResults request example`, func() {
+			fmt.Println("\nValidateResults() result:")
+			// begin-validate_results
+
+			validateResultsOptions := postureManagementService.NewValidateResultsOptions(
+				"testString",
+				"testString",
+			)
+
+			exchangeProtocolValidationResponse, response, err := postureManagementService.ValidateResults(validateResultsOptions)
+			if err != nil {
+				panic(err)
+			}
+			b, _ := json.MarshalIndent(exchangeProtocolValidationResponse, "", "  ")
+			fmt.Println(string(b))
+
+			// end-validate_results
+
+			Expect(err).To(BeNil())
+			Expect(response.StatusCode).To(Equal(201))
+			Expect(exchangeProtocolValidationResponse).ToNot(BeNil())
+
+		})
 	})
 })

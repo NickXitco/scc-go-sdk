@@ -770,7 +770,7 @@ var _ = Describe(`PostureManagementV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"scan_id": "4", "discovery_id": "8", "profile_id": "50", "profile_name": "CIS IBM Foundations Benchmark 1.0.0", "scope_id": "2", "controls": [{"control_id": "7907", "status": "UNABLE_TO_PERFORM", "external_control_id": "50", "control_desciption": "CIS IBM Foundations Benchmark 1.0.0", "goals": [{"goal_description": "Check whether API keys unused for 180 days are detected and optionally disabled", "goal_id": "3000039", "status": "PASS", "severity": "Medium", "completed_time": "2021-04-16T05:32:44.000Z", "error": "N/A", "resource_result": [{"resource_name": "PasswordPolicy", "resourc_type": "Identity and Access Management", "resource_status": "PASS", "display_expected_value": "IBMid password policy should be required at least one lowercase letter", "actual_value": "ActualValue", "results_info": "IBMid password policy minimum password length is set to 8", "na_reason": "('isBootVolume': 'True')"}], "goal_applicability_criteria": {"environment": ["ibm"], "resource": ["cloud_object_storage"], "environment_category": ["cloud_platform"], "resource_category": ["xaas"], "resource_type": ["storage"], "software_details": {"anyKey": "anyValue"}, "os_details": {"anyKey": "anyValue"}, "additional_details": {"anyKey": "anyValue"}, "environment_category_description": {"mapKey": "Cloud"}, "environment_description": {"mapKey": "IBM Cloud"}, "resource_category_description": {"mapKey": "Storage"}, "resource_type_description": {"mapKey": "Bucket"}, "resource_description": {"mapKey": "My_specific_bucket"}}}], "resource_statistics": {"resource_pass_count": 4, "resource_fail_count": 4, "resource_u2p_count": 4, "resource_na_count": 4}}]}`)
+					fmt.Fprintf(res, "%s", `{"scan_id": "4", "discovery_id": "8", "profile_id": "50", "profile_name": "CIS IBM Foundations Benchmark 1.0.0", "scope_id": "2", "controls": [{"control_id": "7907", "status": "UNABLE_TO_PERFORM", "external_control_id": "50", "control_desciption": "CIS IBM Foundations Benchmark 1.0.0", "goals": [{"goal_description": "Check whether API keys unused for 180 days are detected and optionally disabled", "goal_id": "3000039", "status": "PASS", "severity": "Medium", "completed_time": "2021-04-16T05:32:44.000Z", "error": "N/A", "resource_result": [{"resource_name": "PasswordPolicy", "resourc_type": "Identity and Access Management", "resource_status": "PASS", "display_expected_value": "IBMid password policy should be required at least one lowercase letter", "actual_value": "ActualValue", "results_info": "IBMid password policy minimum password length is set to 8", "na_reason": "("isBootVolume": "True")"}], "goal_applicability_criteria": {"environment": ["ibm"], "resource": ["cloud_object_storage"], "environment_category": ["cloud_platform"], "resource_category": ["xaas"], "resource_type": ["storage"], "software_details": {"anyKey": "anyValue"}, "os_details": {"anyKey": "anyValue"}, "additional_details": {"anyKey": "anyValue"}, "environment_category_description": {"mapKey": "Cloud"}, "environment_description": {"mapKey": "IBM Cloud"}, "resource_category_description": {"mapKey": "Storage"}, "resource_type_description": {"mapKey": "Bucket"}, "resource_description": {"mapKey": "My_specific_bucket"}}}], "resource_statistics": {"resource_pass_count": 4, "resource_fail_count": 4, "resource_u2p_count": 4, "resource_na_count": 4}}]}`)
 				}))
 			})
 			It(`Invoke ScansSummary successfully with retries`, func() {
@@ -833,7 +833,7 @@ var _ = Describe(`PostureManagementV1`, func() {
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(200)
-					fmt.Fprintf(res, "%s", `{"scan_id": "4", "discovery_id": "8", "profile_id": "50", "profile_name": "CIS IBM Foundations Benchmark 1.0.0", "scope_id": "2", "controls": [{"control_id": "7907", "status": "UNABLE_TO_PERFORM", "external_control_id": "50", "control_desciption": "CIS IBM Foundations Benchmark 1.0.0", "goals": [{"goal_description": "Check whether API keys unused for 180 days are detected and optionally disabled", "goal_id": "3000039", "status": "PASS", "severity": "Medium", "completed_time": "2021-04-16T05:32:44.000Z", "error": "N/A", "resource_result": [{"resource_name": "PasswordPolicy", "resourc_type": "Identity and Access Management", "resource_status": "PASS", "display_expected_value": "IBMid password policy should be required at least one lowercase letter", "actual_value": "ActualValue", "results_info": "IBMid password policy minimum password length is set to 8", "na_reason": "('isBootVolume': 'True')"}], "goal_applicability_criteria": {"environment": ["ibm"], "resource": ["cloud_object_storage"], "environment_category": ["cloud_platform"], "resource_category": ["xaas"], "resource_type": ["storage"], "software_details": {"anyKey": "anyValue"}, "os_details": {"anyKey": "anyValue"}, "additional_details": {"anyKey": "anyValue"}, "environment_category_description": {"mapKey": "Cloud"}, "environment_description": {"mapKey": "IBM Cloud"}, "resource_category_description": {"mapKey": "Storage"}, "resource_type_description": {"mapKey": "Bucket"}, "resource_description": {"mapKey": "My_specific_bucket"}}}], "resource_statistics": {"resource_pass_count": 4, "resource_fail_count": 4, "resource_u2p_count": 4, "resource_na_count": 4}}]}`)
+					fmt.Fprintf(res, "%s", `{"scan_id": "4", "discovery_id": "8", "profile_id": "50", "profile_name": "CIS IBM Foundations Benchmark 1.0.0", "scope_id": "2", "controls": [{"control_id": "7907", "status": "UNABLE_TO_PERFORM", "external_control_id": "50", "control_desciption": "CIS IBM Foundations Benchmark 1.0.0", "goals": [{"goal_description": "Check whether API keys unused for 180 days are detected and optionally disabled", "goal_id": "3000039", "status": "PASS", "severity": "Medium", "completed_time": "2021-04-16T05:32:44.000Z", "error": "N/A", "resource_result": [{"resource_name": "PasswordPolicy", "resourc_type": "Identity and Access Management", "resource_status": "PASS", "display_expected_value": "IBMid password policy should be required at least one lowercase letter", "actual_value": "ActualValue", "results_info": "IBMid password policy minimum password length is set to 8", "na_reason": "("isBootVolume": "True")"}], "goal_applicability_criteria": {"environment": ["ibm"], "resource": ["cloud_object_storage"], "environment_category": ["cloud_platform"], "resource_category": ["xaas"], "resource_type": ["storage"], "software_details": {"anyKey": "anyValue"}, "os_details": {"anyKey": "anyValue"}, "additional_details": {"anyKey": "anyValue"}, "environment_category_description": {"mapKey": "Cloud"}, "environment_description": {"mapKey": "IBM Cloud"}, "resource_category_description": {"mapKey": "Storage"}, "resource_type_description": {"mapKey": "Bucket"}, "resource_description": {"mapKey": "My_specific_bucket"}}}], "resource_statistics": {"resource_pass_count": 4, "resource_fail_count": 4, "resource_u2p_count": 4, "resource_na_count": 4}}]}`)
 				}))
 			})
 			It(`Invoke ScansSummary successfully`, func() {
@@ -857,7 +857,7 @@ var _ = Describe(`PostureManagementV1`, func() {
 				scansSummaryOptionsModel.ProfileID = core.StringPtr("testString")
 				scansSummaryOptionsModel.TransactionID = core.StringPtr("testString")
 				scansSummaryOptionsModel.Name = core.StringPtr("testString")
-				// scansSummaryOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
+				scansSummaryOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
 
 				// Invoke operation with valid options model (positive test)
 				result, response, operationErr = postureManagementService.ScansSummary(scansSummaryOptionsModel)
@@ -2477,6 +2477,334 @@ var _ = Describe(`PostureManagementV1`, func() {
 			})
 		})
 	})
+	Describe(`ValidateResults(validateResultsOptions *ValidateResultsOptions) - Operation response error`, func() {
+		accountID := "testString"
+		validateResultsPath := "/exchangeprotocol/v1/scope/testString/results"
+		Context(`Using mock server endpoint with invalid JSON response`, func() {
+			BeforeEach(func() {
+				testServer = httptest.NewServer(http.HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
+					defer GinkgoRecover()
+
+					// Verify the contents of the request
+					Expect(req.URL.EscapedPath()).To(Equal(validateResultsPath))
+					Expect(req.Method).To(Equal("POST"))
+					Expect(req.Header["Transaction-Id"]).ToNot(BeNil())
+					Expect(req.Header["Transaction-Id"][0]).To(Equal(fmt.Sprintf("%v", "testString")))
+					Expect(req.URL.Query()["account_id"]).To(Equal([]string{"testString"}))
+					Expect(req.URL.Query()["result_type"]).To(Equal([]string{"testString"}))
+					res.Header().Set("Content-type", "application/json")
+					res.WriteHeader(201)
+					fmt.Fprintf(res, `} this is not valid json {`)
+				}))
+			})
+			It(`Invoke ValidateResults with error: Operation response processing error`, func() {
+				postureManagementService, serviceErr := posturemanagementv1.NewPostureManagementV1(&posturemanagementv1.PostureManagementV1Options{
+					URL:           testServer.URL,
+					Authenticator: &core.NoAuthAuthenticator{},
+					AccountID:     core.StringPtr(accountID),
+				})
+				Expect(serviceErr).To(BeNil())
+				Expect(postureManagementService).ToNot(BeNil())
+
+				// Construct an instance of the TaniumComplianceFindings model
+				taniumComplianceFindingsModel := new(posturemanagementv1.TaniumComplianceFindings)
+				taniumComplianceFindingsModel.CheckID = core.StringPtr("CIS Red Hat Enterprise Linux 8 Benchmark;1.0.0-1;Level 1 - Server;1;xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+				taniumComplianceFindingsModel.State = core.StringPtr("fail")
+				taniumComplianceFindingsModel.RuleID = core.StringPtr("xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+
+				// Construct an instance of the ValidateResultsOptions model
+				validateResultsOptionsModel := new(posturemanagementv1.ValidateResultsOptions)
+				validateResultsOptionsModel.ScopeUUID = core.StringPtr("testString")
+				validateResultsOptionsModel.ResultType = core.StringPtr("testString")
+				validateResultsOptionsModel.ComputerName = core.StringPtr("RHEL8")
+				validateResultsOptionsModel.TaniumClientIPAddress = core.StringPtr("192.168.0.125")
+				validateResultsOptionsModel.IPAddress = []string{"192.168.0.125", "192.168.122.1", "fe80::3c47:1aff:fe33:601"}
+				validateResultsOptionsModel.ComplyComplianceFindings = []posturemanagementv1.TaniumComplianceFindings{*taniumComplianceFindingsModel}
+				validateResultsOptionsModel.Count = core.StringPtr("1")
+				validateResultsOptionsModel.TransactionID = core.StringPtr("testString")
+				validateResultsOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
+				// Expect response parsing to fail since we are receiving a text/plain response
+				result, response, operationErr := postureManagementService.ValidateResults(validateResultsOptionsModel)
+				Expect(operationErr).ToNot(BeNil())
+				Expect(response).ToNot(BeNil())
+				Expect(result).To(BeNil())
+
+				// Enable retries and test again
+				postureManagementService.EnableRetries(0, 0)
+				result, response, operationErr = postureManagementService.ValidateResults(validateResultsOptionsModel)
+				Expect(operationErr).ToNot(BeNil())
+				Expect(response).ToNot(BeNil())
+				Expect(result).To(BeNil())
+			})
+			AfterEach(func() {
+				testServer.Close()
+			})
+		})
+	})
+	Describe(`ValidateResults(validateResultsOptions *ValidateResultsOptions)`, func() {
+		accountID := "testString"
+		validateResultsPath := "/exchangeprotocol/v1/scope/testString/results"
+		Context(`Using mock server endpoint with timeout`, func() {
+			BeforeEach(func() {
+				testServer = httptest.NewServer(http.HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
+					defer GinkgoRecover()
+
+					// Verify the contents of the request
+					Expect(req.URL.EscapedPath()).To(Equal(validateResultsPath))
+					Expect(req.Method).To(Equal("POST"))
+
+					// For gzip-disabled operation, verify Content-Encoding is not set.
+					Expect(req.Header.Get("Content-Encoding")).To(BeEmpty())
+
+					// If there is a body, then make sure we can read it
+					bodyBuf := new(bytes.Buffer)
+					if req.Header.Get("Content-Encoding") == "gzip" {
+						body, err := core.NewGzipDecompressionReader(req.Body)
+						Expect(err).To(BeNil())
+						_, err = bodyBuf.ReadFrom(body)
+						Expect(err).To(BeNil())
+					} else {
+						_, err := bodyBuf.ReadFrom(req.Body)
+						Expect(err).To(BeNil())
+					}
+					fmt.Fprintf(GinkgoWriter, "  Request body: %s", bodyBuf.String())
+
+					Expect(req.Header["Transaction-Id"]).ToNot(BeNil())
+					Expect(req.Header["Transaction-Id"][0]).To(Equal(fmt.Sprintf("%v", "testString")))
+					Expect(req.URL.Query()["account_id"]).To(Equal([]string{"testString"}))
+					Expect(req.URL.Query()["result_type"]).To(Equal([]string{"testString"}))
+					// Sleep a short time to support a timeout test
+					time.Sleep(100 * time.Millisecond)
+
+					// Set mock response
+					res.Header().Set("Content-type", "text/plain")
+					res.WriteHeader(201)
+					fmt.Fprintf(res, "%s", `{"success": "true", "message": "Successfully processed validation request for : loren ipsum"}`)
+				}))
+			})
+			It(`Invoke ValidateResults successfully with retries`, func() {
+				postureManagementService, serviceErr := posturemanagementv1.NewPostureManagementV1(&posturemanagementv1.PostureManagementV1Options{
+					URL:           testServer.URL,
+					Authenticator: &core.NoAuthAuthenticator{},
+					AccountID:     core.StringPtr(accountID),
+				})
+				Expect(serviceErr).To(BeNil())
+				Expect(postureManagementService).ToNot(BeNil())
+				postureManagementService.EnableRetries(0, 0)
+
+				// Construct an instance of the TaniumComplianceFindings model
+				taniumComplianceFindingsModel := new(posturemanagementv1.TaniumComplianceFindings)
+				taniumComplianceFindingsModel.CheckID = core.StringPtr("CIS Red Hat Enterprise Linux 8 Benchmark;1.0.0-1;Level 1 - Server;1;xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+				taniumComplianceFindingsModel.State = core.StringPtr("fail")
+				taniumComplianceFindingsModel.RuleID = core.StringPtr("xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+
+				// Construct an instance of the ValidateResultsOptions model
+				validateResultsOptionsModel := new(posturemanagementv1.ValidateResultsOptions)
+				validateResultsOptionsModel.ScopeUUID = core.StringPtr("testString")
+				validateResultsOptionsModel.ResultType = core.StringPtr("testString")
+				validateResultsOptionsModel.ComputerName = core.StringPtr("RHEL8")
+				validateResultsOptionsModel.TaniumClientIPAddress = core.StringPtr("192.168.0.125")
+				validateResultsOptionsModel.IPAddress = []string{"192.168.0.125", "192.168.122.1", "fe80::3c47:1aff:fe33:601"}
+				validateResultsOptionsModel.ComplyComplianceFindings = []posturemanagementv1.TaniumComplianceFindings{*taniumComplianceFindingsModel}
+				validateResultsOptionsModel.Count = core.StringPtr("1")
+				validateResultsOptionsModel.TransactionID = core.StringPtr("testString")
+				validateResultsOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
+
+				// Invoke operation with a Context to test a timeout error
+				ctx, cancelFunc := context.WithTimeout(context.Background(), 80*time.Millisecond)
+				defer cancelFunc()
+				_, _, operationErr := postureManagementService.ValidateResultsWithContext(ctx, validateResultsOptionsModel)
+				Expect(operationErr).ToNot(BeNil())
+				Expect(operationErr.Error()).To(ContainSubstring("deadline exceeded"))
+
+				// Disable retries and test again
+				postureManagementService.DisableRetries()
+				result, response, operationErr := postureManagementService.ValidateResults(validateResultsOptionsModel)
+				Expect(operationErr).To(BeNil())
+				Expect(response).ToNot(BeNil())
+				Expect(result).ToNot(BeNil())
+
+				// Re-test the timeout error with retries disabled
+				ctx, cancelFunc2 := context.WithTimeout(context.Background(), 80*time.Millisecond)
+				defer cancelFunc2()
+				_, _, operationErr = postureManagementService.ValidateResultsWithContext(ctx, validateResultsOptionsModel)
+				Expect(operationErr).ToNot(BeNil())
+				Expect(operationErr.Error()).To(ContainSubstring("deadline exceeded"))
+			})
+			AfterEach(func() {
+				testServer.Close()
+			})
+		})
+		Context(`Using mock server endpoint`, func() {
+			BeforeEach(func() {
+				testServer = httptest.NewServer(http.HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
+					defer GinkgoRecover()
+
+					// Verify the contents of the request
+					Expect(req.URL.EscapedPath()).To(Equal(validateResultsPath))
+					Expect(req.Method).To(Equal("POST"))
+
+					// For gzip-disabled operation, verify Content-Encoding is not set.
+					Expect(req.Header.Get("Content-Encoding")).To(BeEmpty())
+
+					// If there is a body, then make sure we can read it
+					bodyBuf := new(bytes.Buffer)
+					if req.Header.Get("Content-Encoding") == "gzip" {
+						body, err := core.NewGzipDecompressionReader(req.Body)
+						Expect(err).To(BeNil())
+						_, err = bodyBuf.ReadFrom(body)
+						Expect(err).To(BeNil())
+					} else {
+						_, err := bodyBuf.ReadFrom(req.Body)
+						Expect(err).To(BeNil())
+					}
+					fmt.Fprintf(GinkgoWriter, "  Request body: %s", bodyBuf.String())
+
+					Expect(req.Header["Transaction-Id"]).ToNot(BeNil())
+					Expect(req.Header["Transaction-Id"][0]).To(Equal(fmt.Sprintf("%v", "testString")))
+					Expect(req.URL.Query()["account_id"]).To(Equal([]string{"testString"}))
+					Expect(req.URL.Query()["result_type"]).To(Equal([]string{"testString"}))
+					// Set mock response
+					res.Header().Set("Content-type", "text/plain")
+					res.WriteHeader(201)
+					fmt.Fprintf(res, "%s", `{"success": "true", "message": "Successfully processed validation request for : loren ipsum"}`)
+				}))
+			})
+			It(`Invoke ValidateResults successfully`, func() {
+				postureManagementService, serviceErr := posturemanagementv1.NewPostureManagementV1(&posturemanagementv1.PostureManagementV1Options{
+					URL:           testServer.URL,
+					Authenticator: &core.NoAuthAuthenticator{},
+					AccountID:     core.StringPtr(accountID),
+				})
+				Expect(serviceErr).To(BeNil())
+				Expect(postureManagementService).ToNot(BeNil())
+
+				// Invoke operation with nil options model (negative test)
+				result, response, operationErr := postureManagementService.ValidateResults(nil)
+				Expect(operationErr).NotTo(BeNil())
+				Expect(response).To(BeNil())
+				Expect(result).To(BeNil())
+
+				// Construct an instance of the TaniumComplianceFindings model
+				taniumComplianceFindingsModel := new(posturemanagementv1.TaniumComplianceFindings)
+				taniumComplianceFindingsModel.CheckID = core.StringPtr("CIS Red Hat Enterprise Linux 8 Benchmark;1.0.0-1;Level 1 - Server;1;xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+				taniumComplianceFindingsModel.State = core.StringPtr("fail")
+				taniumComplianceFindingsModel.RuleID = core.StringPtr("xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+
+				// Construct an instance of the ValidateResultsOptions model
+				validateResultsOptionsModel := new(posturemanagementv1.ValidateResultsOptions)
+				validateResultsOptionsModel.ScopeUUID = core.StringPtr("testString")
+				validateResultsOptionsModel.ResultType = core.StringPtr("testString")
+				validateResultsOptionsModel.ComputerName = core.StringPtr("RHEL8")
+				validateResultsOptionsModel.TaniumClientIPAddress = core.StringPtr("192.168.0.125")
+				validateResultsOptionsModel.IPAddress = []string{"192.168.0.125", "192.168.122.1", "fe80::3c47:1aff:fe33:601"}
+				validateResultsOptionsModel.ComplyComplianceFindings = []posturemanagementv1.TaniumComplianceFindings{*taniumComplianceFindingsModel}
+				validateResultsOptionsModel.Count = core.StringPtr("1")
+				validateResultsOptionsModel.TransactionID = core.StringPtr("testString")
+				validateResultsOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
+
+				// Invoke operation with valid options model (positive test)
+				result, response, operationErr = postureManagementService.ValidateResults(validateResultsOptionsModel)
+				Expect(operationErr).To(BeNil())
+				Expect(response).ToNot(BeNil())
+				Expect(result).ToNot(BeNil())
+
+			})
+			It(`Invoke ValidateResults with error: Operation validation and request error`, func() {
+				postureManagementService, serviceErr := posturemanagementv1.NewPostureManagementV1(&posturemanagementv1.PostureManagementV1Options{
+					URL:           testServer.URL,
+					Authenticator: &core.NoAuthAuthenticator{},
+					AccountID:     core.StringPtr(accountID),
+				})
+				Expect(serviceErr).To(BeNil())
+				Expect(postureManagementService).ToNot(BeNil())
+
+				// Construct an instance of the TaniumComplianceFindings model
+				taniumComplianceFindingsModel := new(posturemanagementv1.TaniumComplianceFindings)
+				taniumComplianceFindingsModel.CheckID = core.StringPtr("CIS Red Hat Enterprise Linux 8 Benchmark;1.0.0-1;Level 1 - Server;1;xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+				taniumComplianceFindingsModel.State = core.StringPtr("fail")
+				taniumComplianceFindingsModel.RuleID = core.StringPtr("xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+
+				// Construct an instance of the ValidateResultsOptions model
+				validateResultsOptionsModel := new(posturemanagementv1.ValidateResultsOptions)
+				validateResultsOptionsModel.ScopeUUID = core.StringPtr("testString")
+				validateResultsOptionsModel.ResultType = core.StringPtr("testString")
+				validateResultsOptionsModel.ComputerName = core.StringPtr("RHEL8")
+				validateResultsOptionsModel.TaniumClientIPAddress = core.StringPtr("192.168.0.125")
+				validateResultsOptionsModel.IPAddress = []string{"192.168.0.125", "192.168.122.1", "fe80::3c47:1aff:fe33:601"}
+				validateResultsOptionsModel.ComplyComplianceFindings = []posturemanagementv1.TaniumComplianceFindings{*taniumComplianceFindingsModel}
+				validateResultsOptionsModel.Count = core.StringPtr("1")
+				validateResultsOptionsModel.TransactionID = core.StringPtr("testString")
+				validateResultsOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
+				// Invoke operation with empty URL (negative test)
+				err := postureManagementService.SetServiceURL("")
+				Expect(err).To(BeNil())
+				result, response, operationErr := postureManagementService.ValidateResults(validateResultsOptionsModel)
+				Expect(operationErr).ToNot(BeNil())
+				Expect(operationErr.Error()).To(ContainSubstring(core.ERRORMSG_SERVICE_URL_MISSING))
+				Expect(response).To(BeNil())
+				Expect(result).To(BeNil())
+				// Construct a second instance of the ValidateResultsOptions model with no property values
+				validateResultsOptionsModelNew := new(posturemanagementv1.ValidateResultsOptions)
+				// Invoke operation with invalid model (negative test)
+				result, response, operationErr = postureManagementService.ValidateResults(validateResultsOptionsModelNew)
+				Expect(operationErr).ToNot(BeNil())
+				Expect(response).To(BeNil())
+				Expect(result).To(BeNil())
+			})
+			AfterEach(func() {
+				testServer.Close()
+			})
+		})
+		Context(`Using mock server endpoint with missing response body`, func() {
+			BeforeEach(func() {
+				testServer = httptest.NewServer(http.HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
+					defer GinkgoRecover()
+
+					// Set success status code with no respoonse body
+					res.WriteHeader(201)
+				}))
+			})
+			It(`Invoke ValidateResults successfully`, func() {
+				postureManagementService, serviceErr := posturemanagementv1.NewPostureManagementV1(&posturemanagementv1.PostureManagementV1Options{
+					URL:           testServer.URL,
+					Authenticator: &core.NoAuthAuthenticator{},
+					AccountID:     core.StringPtr(accountID),
+				})
+				Expect(serviceErr).To(BeNil())
+				Expect(postureManagementService).ToNot(BeNil())
+
+				// Construct an instance of the TaniumComplianceFindings model
+				taniumComplianceFindingsModel := new(posturemanagementv1.TaniumComplianceFindings)
+				taniumComplianceFindingsModel.CheckID = core.StringPtr("CIS Red Hat Enterprise Linux 8 Benchmark;1.0.0-1;Level 1 - Server;1;xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+				taniumComplianceFindingsModel.State = core.StringPtr("fail")
+				taniumComplianceFindingsModel.RuleID = core.StringPtr("xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+
+				// Construct an instance of the ValidateResultsOptions model
+				validateResultsOptionsModel := new(posturemanagementv1.ValidateResultsOptions)
+				validateResultsOptionsModel.ScopeUUID = core.StringPtr("testString")
+				validateResultsOptionsModel.ResultType = core.StringPtr("testString")
+				validateResultsOptionsModel.ComputerName = core.StringPtr("RHEL8")
+				validateResultsOptionsModel.TaniumClientIPAddress = core.StringPtr("192.168.0.125")
+				validateResultsOptionsModel.IPAddress = []string{"192.168.0.125", "192.168.122.1", "fe80::3c47:1aff:fe33:601"}
+				validateResultsOptionsModel.ComplyComplianceFindings = []posturemanagementv1.TaniumComplianceFindings{*taniumComplianceFindingsModel}
+				validateResultsOptionsModel.Count = core.StringPtr("1")
+				validateResultsOptionsModel.TransactionID = core.StringPtr("testString")
+				validateResultsOptionsModel.Headers = map[string]string{"x-custom-header": "x-custom-value"}
+
+				// Invoke operation
+				result, response, operationErr := postureManagementService.ValidateResults(validateResultsOptionsModel)
+				Expect(operationErr).To(BeNil())
+				Expect(response).ToNot(BeNil())
+
+				// Verify a nil result
+				Expect(result).To(BeNil())
+			})
+			AfterEach(func() {
+				testServer.Close()
+			})
+		})
+	})
 	Describe(`Model constructor tests`, func() {
 		Context(`Using a service client instance`, func() {
 			accountID := "testString"
@@ -2628,6 +2956,41 @@ var _ = Describe(`PostureManagementV1`, func() {
 				Expect(scansSummaryOptionsModel.TransactionID).To(Equal(core.StringPtr("testString")))
 				Expect(scansSummaryOptionsModel.Name).To(Equal(core.StringPtr("testString")))
 				Expect(scansSummaryOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
+			})
+			It(`Invoke NewValidateResultsOptions successfully`, func() {
+				// Construct an instance of the TaniumComplianceFindings model
+				taniumComplianceFindingsModel := new(posturemanagementv1.TaniumComplianceFindings)
+				Expect(taniumComplianceFindingsModel).ToNot(BeNil())
+				taniumComplianceFindingsModel.CheckID = core.StringPtr("CIS Red Hat Enterprise Linux 8 Benchmark;1.0.0-1;Level 1 - Server;1;xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+				taniumComplianceFindingsModel.State = core.StringPtr("fail")
+				taniumComplianceFindingsModel.RuleID = core.StringPtr("xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")
+				Expect(taniumComplianceFindingsModel.CheckID).To(Equal(core.StringPtr("CIS Red Hat Enterprise Linux 8 Benchmark;1.0.0-1;Level 1 - Server;1;xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")))
+				Expect(taniumComplianceFindingsModel.State).To(Equal(core.StringPtr("fail")))
+				Expect(taniumComplianceFindingsModel.RuleID).To(Equal(core.StringPtr("xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled")))
+
+				// Construct an instance of the ValidateResultsOptions model
+				scopeUUID := "testString"
+				resultType := "testString"
+				validateResultsOptionsModel := postureManagementService.NewValidateResultsOptions(scopeUUID, resultType)
+				validateResultsOptionsModel.SetScopeUUID("testString")
+				validateResultsOptionsModel.SetResultType("testString")
+				validateResultsOptionsModel.SetComputerName("RHEL8")
+				validateResultsOptionsModel.SetTaniumClientIPAddress("192.168.0.125")
+				validateResultsOptionsModel.SetIPAddress([]string{"192.168.0.125", "192.168.122.1", "fe80::3c47:1aff:fe33:601"})
+				validateResultsOptionsModel.SetComplyComplianceFindings([]posturemanagementv1.TaniumComplianceFindings{*taniumComplianceFindingsModel})
+				validateResultsOptionsModel.SetCount("1")
+				validateResultsOptionsModel.SetTransactionID("testString")
+				validateResultsOptionsModel.SetHeaders(map[string]string{"foo": "bar"})
+				Expect(validateResultsOptionsModel).ToNot(BeNil())
+				Expect(validateResultsOptionsModel.ScopeUUID).To(Equal(core.StringPtr("testString")))
+				Expect(validateResultsOptionsModel.ResultType).To(Equal(core.StringPtr("testString")))
+				Expect(validateResultsOptionsModel.ComputerName).To(Equal(core.StringPtr("RHEL8")))
+				Expect(validateResultsOptionsModel.TaniumClientIPAddress).To(Equal(core.StringPtr("192.168.0.125")))
+				Expect(validateResultsOptionsModel.IPAddress).To(Equal([]string{"192.168.0.125", "192.168.122.1", "fe80::3c47:1aff:fe33:601"}))
+				Expect(validateResultsOptionsModel.ComplyComplianceFindings).To(Equal([]posturemanagementv1.TaniumComplianceFindings{*taniumComplianceFindingsModel}))
+				Expect(validateResultsOptionsModel.Count).To(Equal(core.StringPtr("1")))
+				Expect(validateResultsOptionsModel.TransactionID).To(Equal(core.StringPtr("testString")))
+				Expect(validateResultsOptionsModel.Headers).To(Equal(map[string]string{"foo": "bar"}))
 			})
 		})
 	})
