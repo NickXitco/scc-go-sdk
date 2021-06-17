@@ -867,7 +867,7 @@ func (postureManagement *PostureManagementV1) ValidateResultsWithContext(ctx con
 	for headerName, headerValue := range sdkHeaders {
 		builder.AddHeader(headerName, headerValue)
 	}
-	builder.AddHeader("Accept", "text/plain")
+	builder.AddHeader("Accept", "application/json")
 	builder.AddHeader("Content-Type", "application/json")
 	if validateResultsOptions.TransactionID != nil {
 		builder.AddHeader("Transaction-Id", fmt.Sprint(*validateResultsOptions.TransactionID))
@@ -1401,7 +1401,7 @@ func UnmarshalCredential(m map[string]json.RawMessage, result interface{}) (err 
 // ExchangeProtocolValidationResponse : loren ipsum.
 type ExchangeProtocolValidationResponse struct {
 	// loren ipsum.
-	Success *string `json:"success,omitempty"`
+	Success *bool `json:"success,omitempty"`
 
 	// loren ipsum.
 	Message *string `json:"message,omitempty"`

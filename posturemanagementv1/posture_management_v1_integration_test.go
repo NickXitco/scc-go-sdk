@@ -60,7 +60,7 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 		Skip("External configuration is not available, skipping tests...")
 	}
 
-	FDescribe(`External configuration`, func() {
+	Describe(`External configuration`, func() {
 		It("Successfully load the configuration", func() {
 			_, err = os.Stat(externalConfigFile)
 			if err != nil {
@@ -103,9 +103,12 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 				URL:    authUrl,
 			}
 
-			collectorId = "2129"
-			credentialId = "5842"
-			scopeId = "28775"
+			//collectorId = "2129" //stage
+			collectorId = "1528" //dev
+			//credentialId = "5842" //stage
+			credentialId = "2702" //dev
+			scopeId = "28775"     //stage
+			scopeId = "19045"     //dev
 			scanId = "32964"
 
 			fmt.Printf("Service URL: %s\n", serviceURL)
@@ -113,7 +116,7 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 		})
 	})
 
-	FDescribe(`Client initialization`, func() {
+	Describe(`Client initialization`, func() {
 		BeforeEach(func() {
 			shouldSkipTest()
 		})
@@ -323,9 +326,16 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 		})
 	})
 
-	FDescribe(`ValidateResults - Validate exchange protocol results`, func() {
+	Describe(`ValidateResults - Validate exchange protocol results`, func() {
 		BeforeEach(func() {
 			shouldSkipTest()
+			postureManagementServiceOptions := &posturemanagementv1.PostureManagementV1Options{
+				URL:           "https://us.compliance.test.cloud.ibm.com",
+				Authenticator: &authenticator,
+				AccountID:     core.StringPtr(accountId),
+			}
+
+			postureManagementService, err = posturemanagementv1.NewPostureManagementV1UsingExternalConfig(postureManagementServiceOptions)
 		})
 		It(`ValidateResults(validateResultsOptions *ValidateResultsOptions)`, func() {
 
@@ -336,7 +346,7 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 			}
 
 			validateResultsOptions := &posturemanagementv1.ValidateResultsOptions{
-				ScopeUUID:                core.StringPtr("testString"),
+				ScopeUUID:                core.StringPtr("423cf173-8223-4998-b6a8-b65d04405cae"),
 				ResultType:               core.StringPtr("VALIDATION"),
 				ComputerName:             core.StringPtr("RHEL8"),
 				TaniumClientIPAddress:    core.StringPtr("192.168.0.125"),
