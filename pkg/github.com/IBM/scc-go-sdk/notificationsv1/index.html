@@ -1,0 +1,2802 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>notificationsv1 - GoPages</title>
+
+<link type="text/css" rel="stylesheet" href="https://ibm.github.io/scc-go-sdk/lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="https://ibm.github.io/scc-go-sdk/lib/godoc/jquery.js" defer></script>
+
+
+
+
+<script>var goVersion = "go1.15.13";</script>
+<script src="https://ibm.github.io/scc-go-sdk/lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/scc-go-sdk/">GoPages | Auto-generated docs</a></div>
+<div class="top-heading" id="heading-narrow"><a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/scc-go-sdk/">GoPages</a></div>
+<a href="#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package notificationsv1
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/IBM/scc-go-sdk/notificationsv1"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package notificationsv1 : Operations and models for the NotificationsV1 service
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="#GetServiceURLForRegion">func GetServiceURLForRegion(region string) (string, error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalChannel">func UnmarshalChannel(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalChannelAlertSourceItem">func UnmarshalChannelAlertSourceItem(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalChannelDelete">func UnmarshalChannelDelete(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalChannelGet">func UnmarshalChannelGet(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalChannelInfo">func UnmarshalChannelInfo(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalChannelSeverity">func UnmarshalChannelSeverity(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalChannelsDelete">func UnmarshalChannelsDelete(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalChannelsList">func UnmarshalChannelsList(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalNotificationChannelAlertSourceItem">func UnmarshalNotificationChannelAlertSourceItem(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalPublicKeyGet">func UnmarshalPublicKeyGet(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+				
+				<dd><a href="#UnmarshalTestChannel">func UnmarshalTestChannel(m map[string]json.RawMessage, result interface{}) (err error)</a></dd>
+			
+			
+				
+				<dd><a href="#Channel">type Channel</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ChannelAlertSourceItem">type ChannelAlertSourceItem</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ChannelDelete">type ChannelDelete</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ChannelGet">type ChannelGet</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ChannelInfo">type ChannelInfo</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ChannelSeverity">type ChannelSeverity</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ChannelsDelete">type ChannelsDelete</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ChannelsList">type ChannelsList</a></dd>
+				
+				
+			
+				
+				<dd><a href="#CreateNotificationChannelOptions">type CreateNotificationChannelOptions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetAccountID">func (_options *CreateNotificationChannelOptions) SetAccountID(accountID string) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetAlertSource">func (_options *CreateNotificationChannelOptions) SetAlertSource(alertSource []NotificationChannelAlertSourceItem) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetDescription">func (_options *CreateNotificationChannelOptions) SetDescription(description string) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetEnabled">func (_options *CreateNotificationChannelOptions) SetEnabled(enabled bool) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetEndpoint">func (_options *CreateNotificationChannelOptions) SetEndpoint(endpoint string) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetHeaders">func (options *CreateNotificationChannelOptions) SetHeaders(param map[string]string) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetName">func (_options *CreateNotificationChannelOptions) SetName(name string) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetSeverity">func (_options *CreateNotificationChannelOptions) SetSeverity(severity []string) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetTransactionID">func (_options *CreateNotificationChannelOptions) SetTransactionID(transactionID string) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#CreateNotificationChannelOptions.SetType">func (_options *CreateNotificationChannelOptions) SetType(typeVar string) *CreateNotificationChannelOptions</a></dd>
+				
+			
+				
+				<dd><a href="#DeleteNotificationChannelOptions">type DeleteNotificationChannelOptions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DeleteNotificationChannelOptions.SetAccountID">func (_options *DeleteNotificationChannelOptions) SetAccountID(accountID string) *DeleteNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DeleteNotificationChannelOptions.SetChannelID">func (_options *DeleteNotificationChannelOptions) SetChannelID(channelID string) *DeleteNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DeleteNotificationChannelOptions.SetHeaders">func (options *DeleteNotificationChannelOptions) SetHeaders(param map[string]string) *DeleteNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DeleteNotificationChannelOptions.SetTransactionID">func (_options *DeleteNotificationChannelOptions) SetTransactionID(transactionID string) *DeleteNotificationChannelOptions</a></dd>
+				
+			
+				
+				<dd><a href="#DeleteNotificationChannelsOptions">type DeleteNotificationChannelsOptions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DeleteNotificationChannelsOptions.SetAccountID">func (_options *DeleteNotificationChannelsOptions) SetAccountID(accountID string) *DeleteNotificationChannelsOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DeleteNotificationChannelsOptions.SetBody">func (_options *DeleteNotificationChannelsOptions) SetBody(body []string) *DeleteNotificationChannelsOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DeleteNotificationChannelsOptions.SetHeaders">func (options *DeleteNotificationChannelsOptions) SetHeaders(param map[string]string) *DeleteNotificationChannelsOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DeleteNotificationChannelsOptions.SetTransactionID">func (_options *DeleteNotificationChannelsOptions) SetTransactionID(transactionID string) *DeleteNotificationChannelsOptions</a></dd>
+				
+			
+				
+				<dd><a href="#GetNotificationChannelOptions">type GetNotificationChannelOptions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#GetNotificationChannelOptions.SetAccountID">func (_options *GetNotificationChannelOptions) SetAccountID(accountID string) *GetNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#GetNotificationChannelOptions.SetChannelID">func (_options *GetNotificationChannelOptions) SetChannelID(channelID string) *GetNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#GetNotificationChannelOptions.SetHeaders">func (options *GetNotificationChannelOptions) SetHeaders(param map[string]string) *GetNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#GetNotificationChannelOptions.SetTransactionID">func (_options *GetNotificationChannelOptions) SetTransactionID(transactionID string) *GetNotificationChannelOptions</a></dd>
+				
+			
+				
+				<dd><a href="#GetPublicKeyOptions">type GetPublicKeyOptions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#GetPublicKeyOptions.SetAccountID">func (_options *GetPublicKeyOptions) SetAccountID(accountID string) *GetPublicKeyOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#GetPublicKeyOptions.SetHeaders">func (options *GetPublicKeyOptions) SetHeaders(param map[string]string) *GetPublicKeyOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#GetPublicKeyOptions.SetTransactionID">func (_options *GetPublicKeyOptions) SetTransactionID(transactionID string) *GetPublicKeyOptions</a></dd>
+				
+			
+				
+				<dd><a href="#ListAllChannelsOptions">type ListAllChannelsOptions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#ListAllChannelsOptions.SetAccountID">func (_options *ListAllChannelsOptions) SetAccountID(accountID string) *ListAllChannelsOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#ListAllChannelsOptions.SetHeaders">func (options *ListAllChannelsOptions) SetHeaders(param map[string]string) *ListAllChannelsOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#ListAllChannelsOptions.SetLimit">func (_options *ListAllChannelsOptions) SetLimit(limit int64) *ListAllChannelsOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#ListAllChannelsOptions.SetSkip">func (_options *ListAllChannelsOptions) SetSkip(skip int64) *ListAllChannelsOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#ListAllChannelsOptions.SetTransactionID">func (_options *ListAllChannelsOptions) SetTransactionID(transactionID string) *ListAllChannelsOptions</a></dd>
+				
+			
+				
+				<dd><a href="#NotificationChannelAlertSourceItem">type NotificationChannelAlertSourceItem</a></dd>
+				
+				
+			
+				
+				<dd><a href="#NotificationsV1">type NotificationsV1</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NewNotificationsV1">func NewNotificationsV1(options *NotificationsV1Options) (service *NotificationsV1, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NewNotificationsV1UsingExternalConfig">func NewNotificationsV1UsingExternalConfig(options *NotificationsV1Options) (notifications *NotificationsV1, err error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.Clone">func (notifications *NotificationsV1) Clone() *NotificationsV1</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.CreateNotificationChannel">func (notifications *NotificationsV1) CreateNotificationChannel(createNotificationChannelOptions *CreateNotificationChannelOptions) (result *ChannelInfo, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.CreateNotificationChannelWithContext">func (notifications *NotificationsV1) CreateNotificationChannelWithContext(ctx context.Context, createNotificationChannelOptions *CreateNotificationChannelOptions) (result *ChannelInfo, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.DeleteNotificationChannel">func (notifications *NotificationsV1) DeleteNotificationChannel(deleteNotificationChannelOptions *DeleteNotificationChannelOptions) (result *ChannelDelete, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.DeleteNotificationChannelWithContext">func (notifications *NotificationsV1) DeleteNotificationChannelWithContext(ctx context.Context, deleteNotificationChannelOptions *DeleteNotificationChannelOptions) (result *ChannelDelete, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.DeleteNotificationChannels">func (notifications *NotificationsV1) DeleteNotificationChannels(deleteNotificationChannelsOptions *DeleteNotificationChannelsOptions) (result *ChannelsDelete, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.DeleteNotificationChannelsWithContext">func (notifications *NotificationsV1) DeleteNotificationChannelsWithContext(ctx context.Context, deleteNotificationChannelsOptions *DeleteNotificationChannelsOptions) (result *ChannelsDelete, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.DisableRetries">func (notifications *NotificationsV1) DisableRetries()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.EnableRetries">func (notifications *NotificationsV1) EnableRetries(maxRetries int, maxRetryInterval time.Duration)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.GetEnableGzipCompression">func (notifications *NotificationsV1) GetEnableGzipCompression() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.GetNotificationChannel">func (notifications *NotificationsV1) GetNotificationChannel(getNotificationChannelOptions *GetNotificationChannelOptions) (result *ChannelGet, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.GetNotificationChannelWithContext">func (notifications *NotificationsV1) GetNotificationChannelWithContext(ctx context.Context, getNotificationChannelOptions *GetNotificationChannelOptions) (result *ChannelGet, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.GetPublicKey">func (notifications *NotificationsV1) GetPublicKey(getPublicKeyOptions *GetPublicKeyOptions) (result *PublicKeyGet, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.GetPublicKeyWithContext">func (notifications *NotificationsV1) GetPublicKeyWithContext(ctx context.Context, getPublicKeyOptions *GetPublicKeyOptions) (result *PublicKeyGet, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.GetServiceURL">func (notifications *NotificationsV1) GetServiceURL() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.ListAllChannels">func (notifications *NotificationsV1) ListAllChannels(listAllChannelsOptions *ListAllChannelsOptions) (result *ChannelsList, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.ListAllChannelsWithContext">func (notifications *NotificationsV1) ListAllChannelsWithContext(ctx context.Context, listAllChannelsOptions *ListAllChannelsOptions) (result *ChannelsList, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.NewCreateNotificationChannelOptions">func (*NotificationsV1) NewCreateNotificationChannelOptions(accountID string, name string, typeVar string, endpoint string) *CreateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.NewDeleteNotificationChannelOptions">func (*NotificationsV1) NewDeleteNotificationChannelOptions(accountID string, channelID string) *DeleteNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.NewDeleteNotificationChannelsOptions">func (*NotificationsV1) NewDeleteNotificationChannelsOptions(accountID string, body []string) *DeleteNotificationChannelsOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.NewGetNotificationChannelOptions">func (*NotificationsV1) NewGetNotificationChannelOptions(accountID string, channelID string) *GetNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.NewGetPublicKeyOptions">func (*NotificationsV1) NewGetPublicKeyOptions(accountID string) *GetPublicKeyOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.NewListAllChannelsOptions">func (*NotificationsV1) NewListAllChannelsOptions(accountID string) *ListAllChannelsOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.NewNotificationChannelAlertSourceItem">func (*NotificationsV1) NewNotificationChannelAlertSourceItem(providerName string) (_model *NotificationChannelAlertSourceItem, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.NewTestNotificationChannelOptions">func (*NotificationsV1) NewTestNotificationChannelOptions(accountID string, channelID string) *TestNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.NewUpdateNotificationChannelOptions">func (*NotificationsV1) NewUpdateNotificationChannelOptions(accountID string, channelID string, name string, typeVar string, endpoint string) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.SetDefaultHeaders">func (notifications *NotificationsV1) SetDefaultHeaders(headers http.Header)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.SetEnableGzipCompression">func (notifications *NotificationsV1) SetEnableGzipCompression(enableGzip bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.SetServiceURL">func (notifications *NotificationsV1) SetServiceURL(url string) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.TestNotificationChannel">func (notifications *NotificationsV1) TestNotificationChannel(testNotificationChannelOptions *TestNotificationChannelOptions) (result *TestChannel, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.TestNotificationChannelWithContext">func (notifications *NotificationsV1) TestNotificationChannelWithContext(ctx context.Context, testNotificationChannelOptions *TestNotificationChannelOptions) (result *TestChannel, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.UpdateNotificationChannel">func (notifications *NotificationsV1) UpdateNotificationChannel(updateNotificationChannelOptions *UpdateNotificationChannelOptions) (result *ChannelInfo, response *core.DetailedResponse, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NotificationsV1.UpdateNotificationChannelWithContext">func (notifications *NotificationsV1) UpdateNotificationChannelWithContext(ctx context.Context, updateNotificationChannelOptions *UpdateNotificationChannelOptions) (result *ChannelInfo, response *core.DetailedResponse, err error)</a></dd>
+				
+			
+				
+				<dd><a href="#NotificationsV1Options">type NotificationsV1Options</a></dd>
+				
+				
+			
+				
+				<dd><a href="#PublicKeyGet">type PublicKeyGet</a></dd>
+				
+				
+			
+				
+				<dd><a href="#TestChannel">type TestChannel</a></dd>
+				
+				
+			
+				
+				<dd><a href="#TestNotificationChannelOptions">type TestNotificationChannelOptions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#TestNotificationChannelOptions.SetAccountID">func (_options *TestNotificationChannelOptions) SetAccountID(accountID string) *TestNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#TestNotificationChannelOptions.SetChannelID">func (_options *TestNotificationChannelOptions) SetChannelID(channelID string) *TestNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#TestNotificationChannelOptions.SetHeaders">func (options *TestNotificationChannelOptions) SetHeaders(param map[string]string) *TestNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#TestNotificationChannelOptions.SetTransactionID">func (_options *TestNotificationChannelOptions) SetTransactionID(transactionID string) *TestNotificationChannelOptions</a></dd>
+				
+			
+				
+				<dd><a href="#UpdateNotificationChannelOptions">type UpdateNotificationChannelOptions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetAccountID">func (_options *UpdateNotificationChannelOptions) SetAccountID(accountID string) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetAlertSource">func (_options *UpdateNotificationChannelOptions) SetAlertSource(alertSource []NotificationChannelAlertSourceItem) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetChannelID">func (_options *UpdateNotificationChannelOptions) SetChannelID(channelID string) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetDescription">func (_options *UpdateNotificationChannelOptions) SetDescription(description string) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetEnabled">func (_options *UpdateNotificationChannelOptions) SetEnabled(enabled bool) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetEndpoint">func (_options *UpdateNotificationChannelOptions) SetEndpoint(endpoint string) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetHeaders">func (options *UpdateNotificationChannelOptions) SetHeaders(param map[string]string) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetName">func (_options *UpdateNotificationChannelOptions) SetName(name string) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetSeverity">func (_options *UpdateNotificationChannelOptions) SetSeverity(severity []string) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetTransactionID">func (_options *UpdateNotificationChannelOptions) SetTransactionID(transactionID string) *UpdateNotificationChannelOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#UpdateNotificationChannelOptions.SetType">func (_options *UpdateNotificationChannelOptions) SetType(typeVar string) *UpdateNotificationChannelOptions</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go">notifications_v1.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				<p>
+Constants associated with the ChannelAlertSourceItem.ProviderName property.
+The providers that you can receive alerts for. To view your available providers, you can call the
+/v1/{account_id}/providers endpoint of the Findings API.
+</p>
+
+				<pre>const (
+    <span id="ChannelAlertSourceItemProviderNameAllConst">ChannelAlertSourceItemProviderNameAllConst</span>  = &#34;ALL&#34;
+    <span id="ChannelAlertSourceItemProviderNameAtaConst">ChannelAlertSourceItemProviderNameAtaConst</span>  = &#34;ATA&#34;
+    <span id="ChannelAlertSourceItemProviderNameCertConst">ChannelAlertSourceItemProviderNameCertConst</span> = &#34;CERT&#34;
+    <span id="ChannelAlertSourceItemProviderNameNaConst">ChannelAlertSourceItemProviderNameNaConst</span>   = &#34;NA&#34;
+    <span id="ChannelAlertSourceItemProviderNameVaConst">ChannelAlertSourceItemProviderNameVaConst</span>   = &#34;VA&#34;
+)</pre>
+			
+				<p>
+Constants associated with the CreateNotificationChannelOptions.Severity property.
+</p>
+
+				<pre>const (
+    <span id="CreateNotificationChannelOptionsSeverityCriticalConst">CreateNotificationChannelOptionsSeverityCriticalConst</span> = &#34;critical&#34;
+    <span id="CreateNotificationChannelOptionsSeverityHighConst">CreateNotificationChannelOptionsSeverityHighConst</span>     = &#34;high&#34;
+    <span id="CreateNotificationChannelOptionsSeverityLowConst">CreateNotificationChannelOptionsSeverityLowConst</span>      = &#34;low&#34;
+    <span id="CreateNotificationChannelOptionsSeverityMediumConst">CreateNotificationChannelOptionsSeverityMediumConst</span>   = &#34;medium&#34;
+)</pre>
+			
+				<p>
+Constants associated with the UpdateNotificationChannelOptions.Severity property.
+</p>
+
+				<pre>const (
+    <span id="UpdateNotificationChannelOptionsSeverityCriticalConst">UpdateNotificationChannelOptionsSeverityCriticalConst</span> = &#34;critical&#34;
+    <span id="UpdateNotificationChannelOptionsSeverityHighConst">UpdateNotificationChannelOptionsSeverityHighConst</span>     = &#34;high&#34;
+    <span id="UpdateNotificationChannelOptionsSeverityLowConst">UpdateNotificationChannelOptionsSeverityLowConst</span>      = &#34;low&#34;
+    <span id="UpdateNotificationChannelOptionsSeverityMediumConst">UpdateNotificationChannelOptionsSeverityMediumConst</span>   = &#34;medium&#34;
+)</pre>
+			
+				<p>
+Constants associated with the Channel.Type property.
+Type of callback URL.
+</p>
+
+				<pre>const (
+    <span id="ChannelTypeWebhookConst">ChannelTypeWebhookConst</span> = &#34;Webhook&#34;
+)</pre>
+			
+				<p>
+Constants associated with the CreateNotificationChannelOptions.Type property.
+Type of callback URL.
+</p>
+
+				<pre>const (
+    <span id="CreateNotificationChannelOptionsTypeWebhookConst">CreateNotificationChannelOptionsTypeWebhookConst</span> = &#34;Webhook&#34;
+)</pre>
+			
+				<p>
+DefaultServiceName is the default key used to find external configuration information.
+</p>
+
+				<pre>const <span id="DefaultServiceName">DefaultServiceName</span> = &#34;notifications&#34;</pre>
+			
+				<p>
+DefaultServiceURL is the default URL to make service requests to.
+</p>
+
+				<pre>const <span id="DefaultServiceURL">DefaultServiceURL</span> = &#34;https://us-south.secadvisor.cloud.ibm.com/notifications&#34;</pre>
+			
+				<p>
+Constants associated with the UpdateNotificationChannelOptions.Type property.
+Type of callback URL.
+</p>
+
+				<pre>const (
+    <span id="UpdateNotificationChannelOptionsTypeWebhookConst">UpdateNotificationChannelOptionsTypeWebhookConst</span> = &#34;Webhook&#34;
+)</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="GetServiceURLForRegion">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L112">GetServiceURLForRegion</a>
+				<a class="permalink" href="#GetServiceURLForRegion">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetServiceURLForRegion(region <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) (<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetServiceURLForRegion returns the service URL to be used for the specified region
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalChannel">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1568">UnmarshalChannel</a>
+				<a class="permalink" href="#UnmarshalChannel">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalChannel(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalChannel unmarshals an instance of Channel from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalChannelAlertSourceItem">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L774">UnmarshalChannelAlertSourceItem</a>
+				<a class="permalink" href="#UnmarshalChannelAlertSourceItem">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalChannelAlertSourceItem(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalChannelAlertSourceItem unmarshals an instance of ChannelAlertSourceItem from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalChannelDelete">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L798">UnmarshalChannelDelete</a>
+				<a class="permalink" href="#UnmarshalChannelDelete">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalChannelDelete(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalChannelDelete unmarshals an instance of ChannelDelete from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalChannelGet">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L819">UnmarshalChannelGet</a>
+				<a class="permalink" href="#UnmarshalChannelGet">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalChannelGet(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalChannelGet unmarshals an instance of ChannelGet from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalChannelInfo">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L839">UnmarshalChannelInfo</a>
+				<a class="permalink" href="#UnmarshalChannelInfo">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalChannelInfo(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalChannelInfo unmarshals an instance of ChannelInfo from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalChannelSeverity">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L869">UnmarshalChannelSeverity</a>
+				<a class="permalink" href="#UnmarshalChannelSeverity">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalChannelSeverity(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalChannelSeverity unmarshals an instance of ChannelSeverity from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalChannelsDelete">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L898">UnmarshalChannelsDelete</a>
+				<a class="permalink" href="#UnmarshalChannelsDelete">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalChannelsDelete(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalChannelsDelete unmarshals an instance of ChannelsDelete from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalChannelsList">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L915">UnmarshalChannelsList</a>
+				<a class="permalink" href="#UnmarshalChannelsList">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalChannelsList(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalChannelsList unmarshals an instance of ChannelsList from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalNotificationChannelAlertSourceItem">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1313">UnmarshalNotificationChannelAlertSourceItem</a>
+				<a class="permalink" href="#UnmarshalNotificationChannelAlertSourceItem">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalNotificationChannelAlertSourceItem(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalNotificationChannelAlertSourceItem unmarshals an instance of NotificationChannelAlertSourceItem from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalPublicKeyGet">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1333">UnmarshalPublicKeyGet</a>
+				<a class="permalink" href="#UnmarshalPublicKeyGet">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalPublicKeyGet(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalPublicKeyGet unmarshals an instance of PublicKeyGet from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnmarshalTestChannel">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1350">UnmarshalTestChannel</a>
+				<a class="permalink" href="#UnmarshalTestChannel">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnmarshalTestChannel(m map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/">json</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/encoding/json/#RawMessage">RawMessage</a>, result interface{}) (err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnmarshalTestChannel unmarshals an instance of TestChannel from the specified map of raw messages.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Channel">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1534">Channel</a>
+				<a class="permalink" href="#Channel">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Channel : Response including channels.
+</p>
+
+			<pre>type Channel struct {
+    <span class="comment">// A unique ID for the channel.</span>
+<span id="Channel.ChannelID"></span>    ChannelID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;channel_id,omitempty&#34;`
+
+    <span class="comment">// The name of the notification channel in the form &#34;v1/{account_id}/notifications/channelName&#34;.</span>
+<span id="Channel.Name"></span>    Name *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;name,omitempty&#34;`
+
+    <span class="comment">// A one sentence description of this `Channel`.</span>
+<span id="Channel.Description"></span>    Description *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;description,omitempty&#34;`
+
+<span id="Channel.Type"></span>    <span class="comment">// Type of callback URL.</span>
+    Type *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;type,omitempty&#34;`
+
+    <span class="comment">// The severity of the notification.</span>
+<span id="Channel.Severity"></span>    Severity *<a href="#ChannelSeverity">ChannelSeverity</a> `json:&#34;severity,omitempty&#34;`
+
+    <span class="comment">// The callback URL which receives the notification.</span>
+<span id="Channel.Endpoint"></span>    Endpoint *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;endpoint,omitempty&#34;`
+
+    <span class="comment">// Whether the channel is enabled. The default is disabled.</span>
+<span id="Channel.Enabled"></span>    Enabled *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a> `json:&#34;enabled,omitempty&#34;`
+
+<span id="Channel.AlertSource"></span>    AlertSource []<a href="#ChannelAlertSourceItem">ChannelAlertSourceItem</a> `json:&#34;alert_source,omitempty&#34;`
+
+<span id="Channel.Frequency"></span>    Frequency *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;frequency,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ChannelAlertSourceItem">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L750">ChannelAlertSourceItem</a>
+				<a class="permalink" href="#ChannelAlertSourceItem">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ChannelAlertSourceItem : The providers that act as alert sources and the potential findings that can be flagged as alerts.
+</p>
+
+			<pre>type ChannelAlertSourceItem struct {
+    <span class="comment">// The providers that you can receive alerts for. To view your available providers, you can call the</span>
+    <span class="comment">// /v1/{account_id}/providers endpoint of the Findings API.</span>
+<span id="ChannelAlertSourceItem.ProviderName"></span>    ProviderName *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;provider_name,omitempty&#34;`
+
+    <span class="comment">// The types of findings for each provider that you want to receive alerts for. Options are dependent upon the provider</span>
+    <span class="comment">// that you select. Depending on that selection, some available options include `image_with_vulnerabilities`,</span>
+    <span class="comment">// `anonym_server`, `server_suspected_ratio`, `appid`, `cos`, `expired_cert`, and `expiring_1day_cert`For a full list</span>
+    <span class="comment">// of available finding types, see [the docs](/docs/).</span>
+<span id="ChannelAlertSourceItem.FindingTypes"></span>    FindingTypes []interface{} `json:&#34;finding_types,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ChannelDelete">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L789">ChannelDelete</a>
+				<a class="permalink" href="#ChannelDelete">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ChannelDelete : The returned response when a channel is deleted.
+</p>
+
+			<pre>type ChannelDelete struct {
+    <span class="comment">// The ID of the deleted channel.</span>
+<span id="ChannelDelete.ChannelID"></span>    ChannelID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;channel_id,omitempty&#34;`
+
+    <span class="comment">// response message.</span>
+<span id="ChannelDelete.Message"></span>    Message *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;message,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ChannelGet">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L813">ChannelGet</a>
+				<a class="permalink" href="#ChannelGet">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ChannelGet : The returned response when get channel is run.
+</p>
+
+			<pre>type ChannelGet struct {
+    <span class="comment">// get channel.</span>
+<span id="ChannelGet.Channel"></span>    Channel *<a href="#Channel">Channel</a> `json:&#34;channel,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ChannelInfo">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L830">ChannelInfo</a>
+				<a class="permalink" href="#ChannelInfo">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ChannelInfo : The returned response when a channel is created or updated.
+</p>
+
+			<pre>type ChannelInfo struct {
+    <span class="comment">// The ID of the created channel.</span>
+<span id="ChannelInfo.ChannelID"></span>    ChannelID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;channel_id,omitempty&#34;`
+
+    <span class="comment">// response code.</span>
+<span id="ChannelInfo.StatusCode"></span>    StatusCode *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#int64">int64</a> `json:&#34;status_code,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ChannelSeverity">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L854">ChannelSeverity</a>
+				<a class="permalink" href="#ChannelSeverity">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ChannelSeverity : The severity of the notification.
+</p>
+
+			<pre>type ChannelSeverity struct {
+<span id="ChannelSeverity.Critical"></span>    <span class="comment">// Critical severity.</span>
+    Critical *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a> `json:&#34;critical,omitempty&#34;`
+
+<span id="ChannelSeverity.High"></span>    <span class="comment">// High severity.</span>
+    High *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a> `json:&#34;high,omitempty&#34;`
+
+<span id="ChannelSeverity.Medium"></span>    <span class="comment">// Medium severity.</span>
+    Medium *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a> `json:&#34;medium,omitempty&#34;`
+
+<span id="ChannelSeverity.Low"></span>    <span class="comment">// Low severity.</span>
+    Low *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a> `json:&#34;low,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ChannelsDelete">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L892">ChannelsDelete</a>
+				<a class="permalink" href="#ChannelsDelete">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ChannelsDelete : The returned response when more than one channel is deleted.
+</p>
+
+			<pre>type ChannelsDelete struct {
+    <span class="comment">// response message.</span>
+<span id="ChannelsDelete.Message"></span>    Message *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;message,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ChannelsList">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L909">ChannelsList</a>
+				<a class="permalink" href="#ChannelsList">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ChannelsList : Available channels in your account are listed.
+</p>
+
+			<pre>type ChannelsList struct {
+    <span class="comment">// List of channels.</span>
+<span id="ChannelsList.Channels"></span>    Channels []<a href="#Channel">Channel</a> `json:&#34;channels,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="CreateNotificationChannelOptions">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L926">CreateNotificationChannelOptions</a>
+				<a class="permalink" href="#CreateNotificationChannelOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CreateNotificationChannelOptions : The CreateNotificationChannel options.
+</p>
+
+			<pre>type CreateNotificationChannelOptions struct {
+    <span class="comment">// Account ID.</span>
+<span id="CreateNotificationChannelOptions.AccountID"></span>    AccountID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// The name of the notification channel in the form &#34;v1/{account_id}/notifications/channelName&#34;.</span>
+<span id="CreateNotificationChannelOptions.Name"></span>    Name *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required&#34;`
+
+<span id="CreateNotificationChannelOptions.Type"></span>    <span class="comment">// Type of callback URL.</span>
+    Type *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required&#34;`
+
+    <span class="comment">// The callback URL which receives the notification.</span>
+<span id="CreateNotificationChannelOptions.Endpoint"></span>    Endpoint *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required&#34;`
+
+    <span class="comment">// A one sentence description of this `Channel`.</span>
+<span id="CreateNotificationChannelOptions.Description"></span>    Description *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+<span id="CreateNotificationChannelOptions.Severity"></span>    <span class="comment">// Severity of the notification to be received.</span>
+    Severity []<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Channel is enabled or not. Default is disabled.</span>
+<span id="CreateNotificationChannelOptions.Enabled"></span>    Enabled *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a>
+
+<span id="CreateNotificationChannelOptions.AlertSource"></span>    AlertSource []<a href="#NotificationChannelAlertSourceItem">NotificationChannelAlertSourceItem</a>
+
+    <span class="comment">// The transaction id for the request in uuid v4 format.</span>
+<span id="CreateNotificationChannelOptions.TransactionID"></span>    TransactionID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Allows users to set headers on API requests</span>
+<span id="CreateNotificationChannelOptions.Headers"></span>    Headers map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetAccountID">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L982">SetAccountID</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetAccountID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetAccountID(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetAccountID : Allow user to set AccountID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetAlertSource">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1024">SetAlertSource</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetAlertSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetAlertSource(alertSource []<a href="#NotificationChannelAlertSourceItem">NotificationChannelAlertSourceItem</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetAlertSource : Allow user to set AlertSource
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetDescription">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1006">SetDescription</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetDescription">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetDescription(description <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetDescription : Allow user to set Description
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetEnabled">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1018">SetEnabled</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetEnabled">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetEnabled(enabled <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetEnabled : Allow user to set Enabled
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetEndpoint">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1000">SetEndpoint</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetEndpoint">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetEndpoint(endpoint <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetEndpoint : Allow user to set Endpoint
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetHeaders">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1036">SetHeaders</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetHeaders(param map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetHeaders : Allow user to set Headers
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetName">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L988">SetName</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetName(name <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetName : Allow user to set Name
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetSeverity">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1012">SetSeverity</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetSeverity">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetSeverity(severity []<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetSeverity : Allow user to set Severity
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetTransactionID">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1030">SetTransactionID</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetTransactionID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetTransactionID(transactionID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetTransactionID : Allow user to set TransactionID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CreateNotificationChannelOptions.SetType">func (*CreateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L994">SetType</a>
+					<a class="permalink" href="#CreateNotificationChannelOptions.SetType">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) SetType(typeVar <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+SetType : Allow user to set Type
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DeleteNotificationChannelOptions">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1042">DeleteNotificationChannelOptions</a>
+				<a class="permalink" href="#DeleteNotificationChannelOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DeleteNotificationChannelOptions : The DeleteNotificationChannel options.
+</p>
+
+			<pre>type DeleteNotificationChannelOptions struct {
+    <span class="comment">// Account ID.</span>
+<span id="DeleteNotificationChannelOptions.AccountID"></span>    AccountID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// Channel ID.</span>
+<span id="DeleteNotificationChannelOptions.ChannelID"></span>    ChannelID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// The transaction id for the request in uuid v4 format.</span>
+<span id="DeleteNotificationChannelOptions.TransactionID"></span>    TransactionID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Allows users to set headers on API requests</span>
+<span id="DeleteNotificationChannelOptions.Headers"></span>    Headers map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DeleteNotificationChannelOptions.SetAccountID">func (*DeleteNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1065">SetAccountID</a>
+					<a class="permalink" href="#DeleteNotificationChannelOptions.SetAccountID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a>) SetAccountID(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a></pre>
+				<p>
+SetAccountID : Allow user to set AccountID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DeleteNotificationChannelOptions.SetChannelID">func (*DeleteNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1071">SetChannelID</a>
+					<a class="permalink" href="#DeleteNotificationChannelOptions.SetChannelID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a>) SetChannelID(channelID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a></pre>
+				<p>
+SetChannelID : Allow user to set ChannelID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DeleteNotificationChannelOptions.SetHeaders">func (*DeleteNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1083">SetHeaders</a>
+					<a class="permalink" href="#DeleteNotificationChannelOptions.SetHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (options *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a>) SetHeaders(param map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a></pre>
+				<p>
+SetHeaders : Allow user to set Headers
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DeleteNotificationChannelOptions.SetTransactionID">func (*DeleteNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1077">SetTransactionID</a>
+					<a class="permalink" href="#DeleteNotificationChannelOptions.SetTransactionID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a>) SetTransactionID(transactionID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a></pre>
+				<p>
+SetTransactionID : Allow user to set TransactionID
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DeleteNotificationChannelsOptions">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1089">DeleteNotificationChannelsOptions</a>
+				<a class="permalink" href="#DeleteNotificationChannelsOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DeleteNotificationChannelsOptions : The DeleteNotificationChannels options.
+</p>
+
+			<pre>type DeleteNotificationChannelsOptions struct {
+    <span class="comment">// Account ID.</span>
+<span id="DeleteNotificationChannelsOptions.AccountID"></span>    AccountID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+<span id="DeleteNotificationChannelsOptions.Body"></span>    <span class="comment">// Body for bulk delete notification channels.</span>
+    Body []<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required&#34;`
+
+    <span class="comment">// The transaction id for the request in uuid v4 format.</span>
+<span id="DeleteNotificationChannelsOptions.TransactionID"></span>    TransactionID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Allows users to set headers on API requests</span>
+<span id="DeleteNotificationChannelsOptions.Headers"></span>    Headers map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DeleteNotificationChannelsOptions.SetAccountID">func (*DeleteNotificationChannelsOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1112">SetAccountID</a>
+					<a class="permalink" href="#DeleteNotificationChannelsOptions.SetAccountID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a>) SetAccountID(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a></pre>
+				<p>
+SetAccountID : Allow user to set AccountID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DeleteNotificationChannelsOptions.SetBody">func (*DeleteNotificationChannelsOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1118">SetBody</a>
+					<a class="permalink" href="#DeleteNotificationChannelsOptions.SetBody">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a>) SetBody(body []<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a></pre>
+				<p>
+SetBody : Allow user to set Body
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DeleteNotificationChannelsOptions.SetHeaders">func (*DeleteNotificationChannelsOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1130">SetHeaders</a>
+					<a class="permalink" href="#DeleteNotificationChannelsOptions.SetHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (options *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a>) SetHeaders(param map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a></pre>
+				<p>
+SetHeaders : Allow user to set Headers
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DeleteNotificationChannelsOptions.SetTransactionID">func (*DeleteNotificationChannelsOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1124">SetTransactionID</a>
+					<a class="permalink" href="#DeleteNotificationChannelsOptions.SetTransactionID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a>) SetTransactionID(transactionID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a></pre>
+				<p>
+SetTransactionID : Allow user to set TransactionID
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="GetNotificationChannelOptions">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1136">GetNotificationChannelOptions</a>
+				<a class="permalink" href="#GetNotificationChannelOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+GetNotificationChannelOptions : The GetNotificationChannel options.
+</p>
+
+			<pre>type GetNotificationChannelOptions struct {
+    <span class="comment">// Account ID.</span>
+<span id="GetNotificationChannelOptions.AccountID"></span>    AccountID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// Channel ID.</span>
+<span id="GetNotificationChannelOptions.ChannelID"></span>    ChannelID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// The transaction id for the request in uuid v4 format.</span>
+<span id="GetNotificationChannelOptions.TransactionID"></span>    TransactionID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Allows users to set headers on API requests</span>
+<span id="GetNotificationChannelOptions.Headers"></span>    Headers map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="GetNotificationChannelOptions.SetAccountID">func (*GetNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1159">SetAccountID</a>
+					<a class="permalink" href="#GetNotificationChannelOptions.SetAccountID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a>) SetAccountID(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a></pre>
+				<p>
+SetAccountID : Allow user to set AccountID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GetNotificationChannelOptions.SetChannelID">func (*GetNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1165">SetChannelID</a>
+					<a class="permalink" href="#GetNotificationChannelOptions.SetChannelID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a>) SetChannelID(channelID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a></pre>
+				<p>
+SetChannelID : Allow user to set ChannelID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GetNotificationChannelOptions.SetHeaders">func (*GetNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1177">SetHeaders</a>
+					<a class="permalink" href="#GetNotificationChannelOptions.SetHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (options *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a>) SetHeaders(param map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a></pre>
+				<p>
+SetHeaders : Allow user to set Headers
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GetNotificationChannelOptions.SetTransactionID">func (*GetNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1171">SetTransactionID</a>
+					<a class="permalink" href="#GetNotificationChannelOptions.SetTransactionID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a>) SetTransactionID(transactionID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a></pre>
+				<p>
+SetTransactionID : Allow user to set TransactionID
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="GetPublicKeyOptions">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1183">GetPublicKeyOptions</a>
+				<a class="permalink" href="#GetPublicKeyOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+GetPublicKeyOptions : The GetPublicKey options.
+</p>
+
+			<pre>type GetPublicKeyOptions struct {
+    <span class="comment">// Account ID.</span>
+<span id="GetPublicKeyOptions.AccountID"></span>    AccountID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// The transaction id for the request in uuid v4 format.</span>
+<span id="GetPublicKeyOptions.TransactionID"></span>    TransactionID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Allows users to set headers on API requests</span>
+<span id="GetPublicKeyOptions.Headers"></span>    Headers map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="GetPublicKeyOptions.SetAccountID">func (*GetPublicKeyOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1202">SetAccountID</a>
+					<a class="permalink" href="#GetPublicKeyOptions.SetAccountID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#GetPublicKeyOptions">GetPublicKeyOptions</a>) SetAccountID(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#GetPublicKeyOptions">GetPublicKeyOptions</a></pre>
+				<p>
+SetAccountID : Allow user to set AccountID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GetPublicKeyOptions.SetHeaders">func (*GetPublicKeyOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1214">SetHeaders</a>
+					<a class="permalink" href="#GetPublicKeyOptions.SetHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (options *<a href="#GetPublicKeyOptions">GetPublicKeyOptions</a>) SetHeaders(param map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#GetPublicKeyOptions">GetPublicKeyOptions</a></pre>
+				<p>
+SetHeaders : Allow user to set Headers
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GetPublicKeyOptions.SetTransactionID">func (*GetPublicKeyOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1208">SetTransactionID</a>
+					<a class="permalink" href="#GetPublicKeyOptions.SetTransactionID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#GetPublicKeyOptions">GetPublicKeyOptions</a>) SetTransactionID(transactionID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#GetPublicKeyOptions">GetPublicKeyOptions</a></pre>
+				<p>
+SetTransactionID : Allow user to set TransactionID
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ListAllChannelsOptions">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1220">ListAllChannelsOptions</a>
+				<a class="permalink" href="#ListAllChannelsOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ListAllChannelsOptions : The ListAllChannels options.
+</p>
+
+			<pre>type ListAllChannelsOptions struct {
+    <span class="comment">// Account ID.</span>
+<span id="ListAllChannelsOptions.AccountID"></span>    AccountID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// The transaction id for the request in uuid v4 format.</span>
+<span id="ListAllChannelsOptions.TransactionID"></span>    TransactionID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+<span id="ListAllChannelsOptions.Limit"></span>    <span class="comment">// Limit the number of the returned documents to the specified number.</span>
+    Limit *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#int64">int64</a>
+
+    <span class="comment">// The offset is the index of the item from which you want to start returning data from. Default is 0.</span>
+<span id="ListAllChannelsOptions.Skip"></span>    Skip *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#int64">int64</a>
+
+    <span class="comment">// Allows users to set headers on API requests</span>
+<span id="ListAllChannelsOptions.Headers"></span>    Headers map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ListAllChannelsOptions.SetAccountID">func (*ListAllChannelsOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1245">SetAccountID</a>
+					<a class="permalink" href="#ListAllChannelsOptions.SetAccountID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a>) SetAccountID(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a></pre>
+				<p>
+SetAccountID : Allow user to set AccountID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ListAllChannelsOptions.SetHeaders">func (*ListAllChannelsOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1269">SetHeaders</a>
+					<a class="permalink" href="#ListAllChannelsOptions.SetHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (options *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a>) SetHeaders(param map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a></pre>
+				<p>
+SetHeaders : Allow user to set Headers
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ListAllChannelsOptions.SetLimit">func (*ListAllChannelsOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1257">SetLimit</a>
+					<a class="permalink" href="#ListAllChannelsOptions.SetLimit">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a>) SetLimit(limit <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#int64">int64</a>) *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a></pre>
+				<p>
+SetLimit : Allow user to set Limit
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ListAllChannelsOptions.SetSkip">func (*ListAllChannelsOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1263">SetSkip</a>
+					<a class="permalink" href="#ListAllChannelsOptions.SetSkip">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a>) SetSkip(skip <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#int64">int64</a>) *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a></pre>
+				<p>
+SetSkip : Allow user to set Skip
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ListAllChannelsOptions.SetTransactionID">func (*ListAllChannelsOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1251">SetTransactionID</a>
+					<a class="permalink" href="#ListAllChannelsOptions.SetTransactionID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a>) SetTransactionID(transactionID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a></pre>
+				<p>
+SetTransactionID : Allow user to set TransactionID
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="NotificationChannelAlertSourceItem">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1276">NotificationChannelAlertSourceItem</a>
+				<a class="permalink" href="#NotificationChannelAlertSourceItem">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+NotificationChannelAlertSourceItem : The alert sources. They identify the providers and their finding types which makes the findings available to Security
+Advisor.
+</p>
+
+			<pre>type NotificationChannelAlertSourceItem struct {
+    <span class="comment">// Below is a list of builtin providers that you can select in addition to the ones you obtain by calling Findings API</span>
+    <span class="comment">// /v1/{account_id}/providers :</span>
+    <span class="comment">//  | provider_name | The source they represent |</span>
+    <span class="comment">//  |-----|-----|</span>
+    <span class="comment">//  | VA  | Vulnerable image findings|</span>
+    <span class="comment">//  | NA  | Network Insights findings|</span>
+    <span class="comment">//  | ATA | Activity Insights findings|</span>
+    <span class="comment">//  | CERT | Certificate Manager findings|</span>
+    <span class="comment">//  | ALL | Special provider name to represent all the providers. Its mutually exclusive with other providers meaning</span>
+    <span class="comment">// either you choose ALL or you don&#39;t|.</span>
+<span id="NotificationChannelAlertSourceItem.ProviderName"></span>    ProviderName *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;provider_name&#34; validate:&#34;required&#34;`
+
+    <span class="comment">// An array of the finding types of the provider_name or &#34;ALL&#34; to specify all finding types under that provider Below</span>
+    <span class="comment">// is a list of supported finding types for each built in providers</span>
+    <span class="comment">// | provider_name | Supported finding types |</span>
+    <span class="comment">// |-----|-----|</span>
+    <span class="comment">// | VA  | &#34;image_with_vulnerabilities&#34;, &#34;image_with_config_issues&#34;|</span>
+    <span class="comment">// | NA  | &#34;anonym_server&#34;, &#34;malware_server&#34;, &#34;bot_server&#34;, &#34;miner_server&#34;, &#34;server_suspected_ratio&#34;,</span>
+    <span class="comment">// &#34;server_response&#34;, &#34;data_extrusion&#34;, &#34;server_weaponized_total&#34;|</span>
+    <span class="comment">// | ATA | &#34;appid&#34;, &#34;cos&#34;, &#34;iks&#34;, &#34;iam&#34;, &#34;kms&#34;, &#34;cert&#34;, &#34;account&#34;, &#34;app&#34;|</span>
+    <span class="comment">// | CERT | &#34;expired_cert&#34;, &#34;expiring_1day_cert&#34;, &#34;expiring_10day_cert&#34;, &#34;expiring_30day_cert&#34;, &#34;expiring_60day_cert&#34;,</span>
+    <span class="comment">// &#34;expiring_90day_cert&#34;|</span>
+    <span class="comment">// | ALL | &#34;ALL&#34;|.</span>
+<span id="NotificationChannelAlertSourceItem.FindingTypes"></span>    FindingTypes []<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;finding_types,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="NotificationsV1">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L39">NotificationsV1</a>
+				<a class="permalink" href="#NotificationsV1">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+NotificationsV1 : API specification for the Notifications service.
+</p>
+<p>
+Version: 1.0.0
+</p>
+
+			<pre>type NotificationsV1 struct {
+<span id="NotificationsV1.Service"></span>    Service *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#BaseService">BaseService</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewNotificationsV1">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L86">NewNotificationsV1</a>
+					<a class="permalink" href="#NewNotificationsV1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewNotificationsV1(options *<a href="#NotificationsV1Options">NotificationsV1Options</a>) (service *<a href="#NotificationsV1">NotificationsV1</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewNotificationsV1 : constructs an instance of NotificationsV1 with passed in options.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewNotificationsV1UsingExternalConfig">func <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L57">NewNotificationsV1UsingExternalConfig</a>
+					<a class="permalink" href="#NewNotificationsV1UsingExternalConfig">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewNotificationsV1UsingExternalConfig(options *<a href="#NotificationsV1Options">NotificationsV1Options</a>) (notifications *<a href="#NotificationsV1">NotificationsV1</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewNotificationsV1UsingExternalConfig : constructs an instance of NotificationsV1 with passed in options and external configuration.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="NotificationsV1.Clone">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L127">Clone</a>
+					<a class="permalink" href="#NotificationsV1.Clone">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) Clone() *<a href="#NotificationsV1">NotificationsV1</a></pre>
+				<p>
+Clone makes a copy of &#34;notifications&#34; suitable for processing requests.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.CreateNotificationChannel">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L244">CreateNotificationChannel</a>
+					<a class="permalink" href="#NotificationsV1.CreateNotificationChannel">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) CreateNotificationChannel(createNotificationChannelOptions *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) (result *<a href="#ChannelInfo">ChannelInfo</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+CreateNotificationChannel : create notification channel
+create notification channel.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.CreateNotificationChannelWithContext">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L249">CreateNotificationChannelWithContext</a>
+					<a class="permalink" href="#NotificationsV1.CreateNotificationChannelWithContext">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) CreateNotificationChannelWithContext(ctx <a href="https:/ibm.github.io/scc-go-sdk/pkg/context/">context</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/context/#Context">Context</a>, createNotificationChannelOptions *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a>) (result *<a href="#ChannelInfo">ChannelInfo</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+CreateNotificationChannelWithContext is an alternate form of the CreateNotificationChannel method which supports a Context parameter
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.DeleteNotificationChannel">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L404">DeleteNotificationChannel</a>
+					<a class="permalink" href="#NotificationsV1.DeleteNotificationChannel">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) DeleteNotificationChannel(deleteNotificationChannelOptions *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a>) (result *<a href="#ChannelDelete">ChannelDelete</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+DeleteNotificationChannel : delete the details of a specific channel
+delete the details of a specific channel.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.DeleteNotificationChannelWithContext">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L409">DeleteNotificationChannelWithContext</a>
+					<a class="permalink" href="#NotificationsV1.DeleteNotificationChannelWithContext">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) DeleteNotificationChannelWithContext(ctx <a href="https:/ibm.github.io/scc-go-sdk/pkg/context/">context</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/context/#Context">Context</a>, deleteNotificationChannelOptions *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a>) (result *<a href="#ChannelDelete">ChannelDelete</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+DeleteNotificationChannelWithContext is an alternate form of the DeleteNotificationChannel method which supports a Context parameter
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.DeleteNotificationChannels">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L335">DeleteNotificationChannels</a>
+					<a class="permalink" href="#NotificationsV1.DeleteNotificationChannels">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) DeleteNotificationChannels(deleteNotificationChannelsOptions *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a>) (result *<a href="#ChannelsDelete">ChannelsDelete</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+DeleteNotificationChannels : bulk delete of channels
+bulk delete of channels.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.DeleteNotificationChannelsWithContext">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L340">DeleteNotificationChannelsWithContext</a>
+					<a class="permalink" href="#NotificationsV1.DeleteNotificationChannelsWithContext">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) DeleteNotificationChannelsWithContext(ctx <a href="https:/ibm.github.io/scc-go-sdk/pkg/context/">context</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/context/#Context">Context</a>, deleteNotificationChannelsOptions *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a>) (result *<a href="#ChannelsDelete">ChannelsDelete</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+DeleteNotificationChannelsWithContext is an alternate form of the DeleteNotificationChannels method which supports a Context parameter
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.DisableRetries">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L168">DisableRetries</a>
+					<a class="permalink" href="#NotificationsV1.DisableRetries">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) DisableRetries()</pre>
+				<p>
+DisableRetries disables automatic retries for requests invoked for this service instance.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.EnableRetries">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L163">EnableRetries</a>
+					<a class="permalink" href="#NotificationsV1.EnableRetries">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) EnableRetries(maxRetries <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#int">int</a>, maxRetryInterval <a href="https:/ibm.github.io/scc-go-sdk/pkg/time/">time</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/time/#Duration">Duration</a>)</pre>
+				<p>
+EnableRetries enables automatic retries for requests invoked for this service instance.
+If either parameter is specified as 0, then a default value is used instead.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.GetEnableGzipCompression">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L157">GetEnableGzipCompression</a>
+					<a class="permalink" href="#NotificationsV1.GetEnableGzipCompression">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) GetEnableGzipCompression() <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a></pre>
+				<p>
+GetEnableGzipCompression returns the service&#39;s EnableGzipCompression field
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.GetNotificationChannel">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L468">GetNotificationChannel</a>
+					<a class="permalink" href="#NotificationsV1.GetNotificationChannel">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) GetNotificationChannel(getNotificationChannelOptions *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a>) (result *<a href="#ChannelGet">ChannelGet</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+GetNotificationChannel : get the details of a specific channel
+get the details of a specific channel.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.GetNotificationChannelWithContext">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L473">GetNotificationChannelWithContext</a>
+					<a class="permalink" href="#NotificationsV1.GetNotificationChannelWithContext">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) GetNotificationChannelWithContext(ctx <a href="https:/ibm.github.io/scc-go-sdk/pkg/context/">context</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/context/#Context">Context</a>, getNotificationChannelOptions *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a>) (result *<a href="#ChannelGet">ChannelGet</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+GetNotificationChannelWithContext is an alternate form of the GetNotificationChannel method which supports a Context parameter
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.GetPublicKey">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L688">GetPublicKey</a>
+					<a class="permalink" href="#NotificationsV1.GetPublicKey">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) GetPublicKey(getPublicKeyOptions *<a href="#GetPublicKeyOptions">GetPublicKeyOptions</a>) (result *<a href="#PublicKeyGet">PublicKeyGet</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+GetPublicKey : fetch notifications public key
+fetch public key to decrypt messages in notification payload.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.GetPublicKeyWithContext">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L693">GetPublicKeyWithContext</a>
+					<a class="permalink" href="#NotificationsV1.GetPublicKeyWithContext">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) GetPublicKeyWithContext(ctx <a href="https:/ibm.github.io/scc-go-sdk/pkg/context/">context</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/context/#Context">Context</a>, getPublicKeyOptions *<a href="#GetPublicKeyOptions">GetPublicKeyOptions</a>) (result *<a href="#PublicKeyGet">PublicKeyGet</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+GetPublicKeyWithContext is an alternate form of the GetPublicKey method which supports a Context parameter
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.GetServiceURL">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L142">GetServiceURL</a>
+					<a class="permalink" href="#NotificationsV1.GetServiceURL">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) GetServiceURL() <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a></pre>
+				<p>
+GetServiceURL returns the service URL
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.ListAllChannels">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L174">ListAllChannels</a>
+					<a class="permalink" href="#NotificationsV1.ListAllChannels">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) ListAllChannels(listAllChannelsOptions *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a>) (result *<a href="#ChannelsList">ChannelsList</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ListAllChannels : list all channels
+list all channels under this account.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.ListAllChannelsWithContext">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L179">ListAllChannelsWithContext</a>
+					<a class="permalink" href="#NotificationsV1.ListAllChannelsWithContext">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) ListAllChannelsWithContext(ctx <a href="https:/ibm.github.io/scc-go-sdk/pkg/context/">context</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/context/#Context">Context</a>, listAllChannelsOptions *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a>) (result *<a href="#ChannelsList">ChannelsList</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ListAllChannelsWithContext is an alternate form of the ListAllChannels method which supports a Context parameter
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.NewCreateNotificationChannelOptions">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L972">NewCreateNotificationChannelOptions</a>
+					<a class="permalink" href="#NotificationsV1.NewCreateNotificationChannelOptions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="#NotificationsV1">NotificationsV1</a>) NewCreateNotificationChannelOptions(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, name <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, typeVar <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, endpoint <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#CreateNotificationChannelOptions">CreateNotificationChannelOptions</a></pre>
+				<p>
+NewCreateNotificationChannelOptions : Instantiate CreateNotificationChannelOptions
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.NewDeleteNotificationChannelOptions">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1057">NewDeleteNotificationChannelOptions</a>
+					<a class="permalink" href="#NotificationsV1.NewDeleteNotificationChannelOptions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="#NotificationsV1">NotificationsV1</a>) NewDeleteNotificationChannelOptions(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, channelID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelOptions">DeleteNotificationChannelOptions</a></pre>
+				<p>
+NewDeleteNotificationChannelOptions : Instantiate DeleteNotificationChannelOptions
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.NewDeleteNotificationChannelsOptions">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1104">NewDeleteNotificationChannelsOptions</a>
+					<a class="permalink" href="#NotificationsV1.NewDeleteNotificationChannelsOptions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="#NotificationsV1">NotificationsV1</a>) NewDeleteNotificationChannelsOptions(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, body []<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#DeleteNotificationChannelsOptions">DeleteNotificationChannelsOptions</a></pre>
+				<p>
+NewDeleteNotificationChannelsOptions : Instantiate DeleteNotificationChannelsOptions
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.NewGetNotificationChannelOptions">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1151">NewGetNotificationChannelOptions</a>
+					<a class="permalink" href="#NotificationsV1.NewGetNotificationChannelOptions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="#NotificationsV1">NotificationsV1</a>) NewGetNotificationChannelOptions(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, channelID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#GetNotificationChannelOptions">GetNotificationChannelOptions</a></pre>
+				<p>
+NewGetNotificationChannelOptions : Instantiate GetNotificationChannelOptions
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.NewGetPublicKeyOptions">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1195">NewGetPublicKeyOptions</a>
+					<a class="permalink" href="#NotificationsV1.NewGetPublicKeyOptions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="#NotificationsV1">NotificationsV1</a>) NewGetPublicKeyOptions(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#GetPublicKeyOptions">GetPublicKeyOptions</a></pre>
+				<p>
+NewGetPublicKeyOptions : Instantiate GetPublicKeyOptions
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.NewListAllChannelsOptions">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1238">NewListAllChannelsOptions</a>
+					<a class="permalink" href="#NotificationsV1.NewListAllChannelsOptions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="#NotificationsV1">NotificationsV1</a>) NewListAllChannelsOptions(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#ListAllChannelsOptions">ListAllChannelsOptions</a></pre>
+				<p>
+NewListAllChannelsOptions : Instantiate ListAllChannelsOptions
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.NewNotificationChannelAlertSourceItem">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1304">NewNotificationChannelAlertSourceItem</a>
+					<a class="permalink" href="#NotificationsV1.NewNotificationChannelAlertSourceItem">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="#NotificationsV1">NotificationsV1</a>) NewNotificationChannelAlertSourceItem(providerName <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) (_model *<a href="#NotificationChannelAlertSourceItem">NotificationChannelAlertSourceItem</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewNotificationChannelAlertSourceItem : Instantiate NotificationChannelAlertSourceItem (Generic Model Constructor)
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.NewTestNotificationChannelOptions">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1376">NewTestNotificationChannelOptions</a>
+					<a class="permalink" href="#NotificationsV1.NewTestNotificationChannelOptions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="#NotificationsV1">NotificationsV1</a>) NewTestNotificationChannelOptions(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, channelID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a></pre>
+				<p>
+NewTestNotificationChannelOptions : Instantiate TestNotificationChannelOptions
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.NewUpdateNotificationChannelOptions">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1457">NewUpdateNotificationChannelOptions</a>
+					<a class="permalink" href="#NotificationsV1.NewUpdateNotificationChannelOptions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="#NotificationsV1">NotificationsV1</a>) NewUpdateNotificationChannelOptions(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, channelID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, name <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, typeVar <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>, endpoint <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+NewUpdateNotificationChannelOptions : Instantiate UpdateNotificationChannelOptions
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.SetDefaultHeaders">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L147">SetDefaultHeaders</a>
+					<a class="permalink" href="#NotificationsV1.SetDefaultHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) SetDefaultHeaders(headers <a href="https:/ibm.github.io/scc-go-sdk/pkg/net/http/">http</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/net/http/#Header">Header</a>)</pre>
+				<p>
+SetDefaultHeaders sets HTTP headers to be sent in every request
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.SetEnableGzipCompression">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L152">SetEnableGzipCompression</a>
+					<a class="permalink" href="#NotificationsV1.SetEnableGzipCompression">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) SetEnableGzipCompression(enableGzip <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+SetEnableGzipCompression sets the service&#39;s EnableGzipCompression field
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.SetServiceURL">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L137">SetServiceURL</a>
+					<a class="permalink" href="#NotificationsV1.SetServiceURL">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) SetServiceURL(url <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a></pre>
+				<p>
+SetServiceURL sets the service URL
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.TestNotificationChannel">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L624">TestNotificationChannel</a>
+					<a class="permalink" href="#NotificationsV1.TestNotificationChannel">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) TestNotificationChannel(testNotificationChannelOptions *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a>) (result *<a href="#TestChannel">TestChannel</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TestNotificationChannel : test notification channel
+test a nofication channel under this account.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.TestNotificationChannelWithContext">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L629">TestNotificationChannelWithContext</a>
+					<a class="permalink" href="#NotificationsV1.TestNotificationChannelWithContext">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) TestNotificationChannelWithContext(ctx <a href="https:/ibm.github.io/scc-go-sdk/pkg/context/">context</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/context/#Context">Context</a>, testNotificationChannelOptions *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a>) (result *<a href="#TestChannel">TestChannel</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TestNotificationChannelWithContext is an alternate form of the TestNotificationChannel method which supports a Context parameter
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.UpdateNotificationChannel">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L532">UpdateNotificationChannel</a>
+					<a class="permalink" href="#NotificationsV1.UpdateNotificationChannel">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) UpdateNotificationChannel(updateNotificationChannelOptions *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) (result *<a href="#ChannelInfo">ChannelInfo</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+UpdateNotificationChannel : update notification channel
+update notification channel.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="NotificationsV1.UpdateNotificationChannelWithContext">func (*NotificationsV1) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L537">UpdateNotificationChannelWithContext</a>
+					<a class="permalink" href="#NotificationsV1.UpdateNotificationChannelWithContext">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (notifications *<a href="#NotificationsV1">NotificationsV1</a>) UpdateNotificationChannelWithContext(ctx <a href="https:/ibm.github.io/scc-go-sdk/pkg/context/">context</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/context/#Context">Context</a>, updateNotificationChannelOptions *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) (result *<a href="#ChannelInfo">ChannelInfo</a>, response *<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#DetailedResponse">DetailedResponse</a>, err <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#error">error</a>)</pre>
+				<p>
+UpdateNotificationChannelWithContext is an alternate form of the UpdateNotificationChannel method which supports a Context parameter
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="NotificationsV1Options">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L50">NotificationsV1Options</a>
+				<a class="permalink" href="#NotificationsV1Options">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+NotificationsV1Options : Service options
+</p>
+
+			<pre>type NotificationsV1Options struct {
+<span id="NotificationsV1Options.ServiceName"></span>    ServiceName   <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+<span id="NotificationsV1Options.URL"></span>    URL           <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+<span id="NotificationsV1Options.Authenticator"></span>    Authenticator <a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/">core</a>.<a href="https:/ibm.github.io/scc-go-sdk/pkg/github.com/IBM/go-sdk-core/v5/core/#Authenticator">Authenticator</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PublicKeyGet">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1328">PublicKeyGet</a>
+				<a class="permalink" href="#PublicKeyGet">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+PublicKeyGet : PublicKeyGet struct
+</p>
+
+			<pre>type PublicKeyGet struct {
+<span id="PublicKeyGet.PublicKey"></span>    PublicKey *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;public_key&#34; validate:&#34;required&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TestChannel">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1344">TestChannel</a>
+				<a class="permalink" href="#TestChannel">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TestChannel : The returned response when a webhook is tested for a channel.
+</p>
+
+			<pre>type TestChannel struct {
+    <span class="comment">// response status.</span>
+<span id="TestChannel.Test"></span>    Test *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `json:&#34;test,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TestNotificationChannelOptions">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1361">TestNotificationChannelOptions</a>
+				<a class="permalink" href="#TestNotificationChannelOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TestNotificationChannelOptions : The TestNotificationChannel options.
+</p>
+
+			<pre>type TestNotificationChannelOptions struct {
+    <span class="comment">// Account ID.</span>
+<span id="TestNotificationChannelOptions.AccountID"></span>    AccountID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// Channel ID.</span>
+<span id="TestNotificationChannelOptions.ChannelID"></span>    ChannelID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// The transaction id for the request in uuid v4 format.</span>
+<span id="TestNotificationChannelOptions.TransactionID"></span>    TransactionID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Allows users to set headers on API requests</span>
+<span id="TestNotificationChannelOptions.Headers"></span>    Headers map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="TestNotificationChannelOptions.SetAccountID">func (*TestNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1384">SetAccountID</a>
+					<a class="permalink" href="#TestNotificationChannelOptions.SetAccountID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a>) SetAccountID(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a></pre>
+				<p>
+SetAccountID : Allow user to set AccountID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TestNotificationChannelOptions.SetChannelID">func (*TestNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1390">SetChannelID</a>
+					<a class="permalink" href="#TestNotificationChannelOptions.SetChannelID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a>) SetChannelID(channelID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a></pre>
+				<p>
+SetChannelID : Allow user to set ChannelID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TestNotificationChannelOptions.SetHeaders">func (*TestNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1402">SetHeaders</a>
+					<a class="permalink" href="#TestNotificationChannelOptions.SetHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (options *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a>) SetHeaders(param map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a></pre>
+				<p>
+SetHeaders : Allow user to set Headers
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TestNotificationChannelOptions.SetTransactionID">func (*TestNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1396">SetTransactionID</a>
+					<a class="permalink" href="#TestNotificationChannelOptions.SetTransactionID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a>) SetTransactionID(transactionID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#TestNotificationChannelOptions">TestNotificationChannelOptions</a></pre>
+				<p>
+SetTransactionID : Allow user to set TransactionID
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UpdateNotificationChannelOptions">type <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1408">UpdateNotificationChannelOptions</a>
+				<a class="permalink" href="#UpdateNotificationChannelOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UpdateNotificationChannelOptions : The UpdateNotificationChannel options.
+</p>
+
+			<pre>type UpdateNotificationChannelOptions struct {
+    <span class="comment">// Account ID.</span>
+<span id="UpdateNotificationChannelOptions.AccountID"></span>    AccountID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// Channel ID.</span>
+<span id="UpdateNotificationChannelOptions.ChannelID"></span>    ChannelID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required,ne=&#34;`
+
+    <span class="comment">// The name of the notification channel in the form &#34;v1/{account_id}/notifications/channelName&#34;.</span>
+<span id="UpdateNotificationChannelOptions.Name"></span>    Name *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required&#34;`
+
+<span id="UpdateNotificationChannelOptions.Type"></span>    <span class="comment">// Type of callback URL.</span>
+    Type *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required&#34;`
+
+    <span class="comment">// The callback URL which receives the notification.</span>
+<span id="UpdateNotificationChannelOptions.Endpoint"></span>    Endpoint *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a> `validate:&#34;required&#34;`
+
+    <span class="comment">// A one sentence description of this `Channel`.</span>
+<span id="UpdateNotificationChannelOptions.Description"></span>    Description *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+<span id="UpdateNotificationChannelOptions.Severity"></span>    <span class="comment">// Severity of the notification to be received.</span>
+    Severity []<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Channel is enabled or not. Default is disabled.</span>
+<span id="UpdateNotificationChannelOptions.Enabled"></span>    Enabled *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a>
+
+<span id="UpdateNotificationChannelOptions.AlertSource"></span>    AlertSource []<a href="#NotificationChannelAlertSourceItem">NotificationChannelAlertSourceItem</a>
+
+    <span class="comment">// The transaction id for the request in uuid v4 format.</span>
+<span id="UpdateNotificationChannelOptions.TransactionID"></span>    TransactionID *<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Allows users to set headers on API requests</span>
+<span id="UpdateNotificationChannelOptions.Headers"></span>    Headers map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetAccountID">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1468">SetAccountID</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetAccountID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetAccountID(accountID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetAccountID : Allow user to set AccountID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetAlertSource">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1516">SetAlertSource</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetAlertSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetAlertSource(alertSource []<a href="#NotificationChannelAlertSourceItem">NotificationChannelAlertSourceItem</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetAlertSource : Allow user to set AlertSource
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetChannelID">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1474">SetChannelID</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetChannelID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetChannelID(channelID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetChannelID : Allow user to set ChannelID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetDescription">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1498">SetDescription</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetDescription">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetDescription(description <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetDescription : Allow user to set Description
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetEnabled">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1510">SetEnabled</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetEnabled">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetEnabled(enabled <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#bool">bool</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetEnabled : Allow user to set Enabled
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetEndpoint">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1492">SetEndpoint</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetEndpoint">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetEndpoint(endpoint <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetEndpoint : Allow user to set Endpoint
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetHeaders">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1528">SetHeaders</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetHeaders(param map[<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>]<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetHeaders : Allow user to set Headers
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetName">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1480">SetName</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetName(name <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetName : Allow user to set Name
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetSeverity">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1504">SetSeverity</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetSeverity">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetSeverity(severity []<a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetSeverity : Allow user to set Severity
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetTransactionID">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1522">SetTransactionID</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetTransactionID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetTransactionID(transactionID <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetTransactionID : Allow user to set TransactionID
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UpdateNotificationChannelOptions.SetType">func (*UpdateNotificationChannelOptions) <a href="./https:/ibm.github.io/scc-go-sdk/src/github.com/IBM/scc-go-sdk/notificationsv1/notifications_v1.go#L1486">SetType</a>
+					<a class="permalink" href="#UpdateNotificationChannelOptions.SetType">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_options *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a>) SetType(typeVar <a href="https:/ibm.github.io/scc-go-sdk/pkg/builtin/#string">string</a>) *<a href="#UpdateNotificationChannelOptions">UpdateNotificationChannelOptions</a></pre>
+				<p>
+SetType : Allow user to set Type
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.13.<br>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>
