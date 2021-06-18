@@ -229,7 +229,7 @@ var _ = Describe(`PostureManagementV1 Examples Tests`, func() {
 			// end-create_scope
 
 			Expect(err).To(BeNil())
-			Expect(response.StatusCode).To(Equal(201))
+			Expect(response.StatusCode).To(Equal(202))
 			Expect(scope).ToNot(BeNil())
 
 		})

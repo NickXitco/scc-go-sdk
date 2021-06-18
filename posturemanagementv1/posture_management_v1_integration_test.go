@@ -103,12 +103,12 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 				URL:    authUrl,
 			}
 
-			//collectorId = "2129" //stage
-			collectorId = "1528" //dev
-			//credentialId = "5842" //stage
-			credentialId = "2702" //dev
+			collectorId = "2129"  //stage
+			credentialId = "5842" //stage
 			scopeId = "28775"     //stage
-			scopeId = "19045"     //dev
+			//collectorId = "1528" //dev
+			//credentialId = "2702" //dev
+			//scopeId = "19045"     //dev
 			scanId = "32964"
 
 			fmt.Printf("Service URL: %s\n", serviceURL)
@@ -256,8 +256,9 @@ var _ = Describe(`PostureManagementV1 Integration Tests`, func() {
 			scope, response, err := postureManagementService.CreateScope(createScopeOptions)
 
 			Expect(err).To(BeNil())
-			Expect(response.StatusCode).To(Equal(201))
+			Expect(response.StatusCode).To(Equal(202))
 			Expect(scope).ToNot(BeNil())
+			Expect(scope.Message).ToNot(BeNil())
 
 		})
 	})

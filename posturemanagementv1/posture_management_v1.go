@@ -2878,6 +2878,9 @@ type Scope struct {
 
 	// The time that the scope was last modified in UTC.
 	ModifiedTime *strfmt.DateTime `json:"modified_time,omitempty"`
+
+	// This field will contain the correlation id for checking the status of the discovery.
+	Message *string `json:"message,omitempty"`
 }
 
 // Constants associated with the Scope.EnvironmentType property.
@@ -2925,6 +2928,10 @@ func UnmarshalScope(m map[string]json.RawMessage, result interface{}) (err error
 		return
 	}
 	err = core.UnmarshalPrimitive(m, "modified_time", &obj.ModifiedTime)
+	if err != nil {
+		return
+	}
+	err = core.UnmarshalPrimitive(m, "message", &obj.Message)
 	if err != nil {
 		return
 	}

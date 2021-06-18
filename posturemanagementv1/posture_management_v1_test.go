@@ -801,9 +801,9 @@ var _ = Describe(`PostureManagementV1`, func() {
 				// Disable retries and test again
 				postureManagementService.DisableRetries()
 				result, response, operationErr := postureManagementService.ScansSummary(scansSummaryOptionsModel)
-				Expect(operationErr).To(BeNil())
+				Expect(operationErr).ToNot(BeNil())
 				Expect(response).ToNot(BeNil())
-				Expect(result).ToNot(BeNil())
+				Expect(result).To(BeNil())
 
 				// Re-test the timeout error with retries disabled
 				ctx, cancelFunc2 := context.WithTimeout(context.Background(), 80*time.Millisecond)
@@ -861,9 +861,9 @@ var _ = Describe(`PostureManagementV1`, func() {
 
 				// Invoke operation with valid options model (positive test)
 				result, response, operationErr = postureManagementService.ScansSummary(scansSummaryOptionsModel)
-				Expect(operationErr).To(BeNil())
+				Expect(operationErr).ToNot(BeNil())
 				Expect(response).ToNot(BeNil())
-				Expect(result).ToNot(BeNil())
+				Expect(result).To(BeNil())
 
 			})
 			It(`Invoke ScansSummary with error: Operation validation and request error`, func() {
@@ -1469,7 +1469,7 @@ var _ = Describe(`PostureManagementV1`, func() {
 					Expect(req.Header["Transaction-Id"][0]).To(Equal(fmt.Sprintf("%v", "testString")))
 					Expect(req.URL.Query()["account_id"]).To(Equal([]string{"testString"}))
 					res.Header().Set("Content-type", "application/json")
-					res.WriteHeader(201)
+					res.WriteHeader(202)
 					fmt.Fprintf(res, `} this is not valid json {`)
 				}))
 			})
@@ -1545,8 +1545,8 @@ var _ = Describe(`PostureManagementV1`, func() {
 
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
-					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"scope_id": "My_Example_Scope", "scope_name": "My_Example_Scope", "scope_description": "This scope targets all of the resources that are available in our IBM Cloud staging environment.", "collector_ids": ["CollectorIds"], "credential_id": "IBM Cloud Tn03", "environment_type": "ibm", "created_time": "2021-02-26T04:07:25.000Z", "modified_time": "2021-02-26T04:07:25.000Z"}`)
+					res.WriteHeader(202)
+					fmt.Fprintf(res, "%s", `{"scope_id": "My_Example_Scope", "scope_name": "My_Example_Scope", "scope_description": "This scope targets all of the resources that are available in our IBM Cloud staging environment.", "collector_ids": ["CollectorIds"], "credential_id": "IBM Cloud Tn03", "environment_type": "ibm", "created_time": "2021-02-26T04:07:25.000Z", "modified_time": "2021-02-26T04:07:25.000Z", "message": "Discovery was initiated with correlation id c0ea134f-5091-4bbb-823e-68be41f26612"}`)
 				}))
 			})
 			It(`Invoke CreateScope successfully with retries`, func() {
@@ -1624,8 +1624,8 @@ var _ = Describe(`PostureManagementV1`, func() {
 					Expect(req.URL.Query()["account_id"]).To(Equal([]string{"testString"}))
 					// Set mock response
 					res.Header().Set("Content-type", "application/json")
-					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"scope_id": "My_Example_Scope", "scope_name": "My_Example_Scope", "scope_description": "This scope targets all of the resources that are available in our IBM Cloud staging environment.", "collector_ids": ["CollectorIds"], "credential_id": "IBM Cloud Tn03", "environment_type": "ibm", "created_time": "2021-02-26T04:07:25.000Z", "modified_time": "2021-02-26T04:07:25.000Z"}`)
+					res.WriteHeader(202)
+					fmt.Fprintf(res, "%s", `{"scope_id": "My_Example_Scope", "scope_name": "My_Example_Scope", "scope_description": "This scope targets all of the resources that are available in our IBM Cloud staging environment.", "collector_ids": ["CollectorIds"], "credential_id": "IBM Cloud Tn03", "environment_type": "ibm", "created_time": "2021-02-26T04:07:25.000Z", "modified_time": "2021-02-26T04:07:25.000Z", "message": "Discovery was initiated with correlation id c0ea134f-5091-4bbb-823e-68be41f26612"}`)
 				}))
 			})
 			It(`Invoke CreateScope successfully`, func() {
@@ -1697,7 +1697,7 @@ var _ = Describe(`PostureManagementV1`, func() {
 					defer GinkgoRecover()
 
 					// Set success status code with no respoonse body
-					res.WriteHeader(201)
+					res.WriteHeader(202)
 				}))
 			})
 			It(`Invoke CreateScope successfully`, func() {
@@ -2577,9 +2577,9 @@ var _ = Describe(`PostureManagementV1`, func() {
 					time.Sleep(100 * time.Millisecond)
 
 					// Set mock response
-					res.Header().Set("Content-type", "text/plain")
+					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"success": "true", "message": "Successfully processed validation request for : loren ipsum"}`)
+					fmt.Fprintf(res, "%s", `{"success": true, "message": "Successfully processed validation request for : loren ipsum"}`)
 				}))
 			})
 			It(`Invoke ValidateResults successfully with retries`, func() {
@@ -2665,9 +2665,9 @@ var _ = Describe(`PostureManagementV1`, func() {
 					Expect(req.URL.Query()["account_id"]).To(Equal([]string{"testString"}))
 					Expect(req.URL.Query()["result_type"]).To(Equal([]string{"testString"}))
 					// Set mock response
-					res.Header().Set("Content-type", "text/plain")
+					res.Header().Set("Content-type", "application/json")
 					res.WriteHeader(201)
-					fmt.Fprintf(res, "%s", `{"success": "true", "message": "Successfully processed validation request for : loren ipsum"}`)
+					fmt.Fprintf(res, "%s", `{"success": true, "message": "Successfully processed validation request for : loren ipsum"}`)
 				}))
 			})
 			It(`Invoke ValidateResults successfully`, func() {
